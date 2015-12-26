@@ -1,2 +1,0 @@
-# Our expectations from you
-
