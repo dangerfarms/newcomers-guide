@@ -1,4 +1,4 @@
-# Newcomers Guide to Dangerfarms
+# Introduction
 This document is intended for newcomers at Dangerfarms.
 
 By the time you read this document you will know enough to start working with us.
