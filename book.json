@@ -1,5 +1,15 @@
 {    
     "plugins": [
         "richquotesbooster", "richquotes"
-    ]
+    ],
+    "pluginsConfig":
+    {
+        "richquotes":
+        {
+            "note": {
+                "alert": "info",
+                "picto": ""
+            }
+        }
+    }
 }
