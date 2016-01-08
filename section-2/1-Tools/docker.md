@@ -10,7 +10,8 @@ To set up docker go to: https://docs.docker.com/engine/installation/ and follow 
 Ubuntu: https://docs.docker.com/engine/installation/ubuntulinux/#create-a-docker-group  
 Fedora: https://docs.docker.com/engine/installation/fedora/#create-a-docker-group  
 For other distros please find it in the installation page.
-&nbsp;&nbsp;&nbsp;  
+
+&nbsp;
 > **Note** **For Mac** you will need to install `docker-machine` as well.
 
 ##docker-compose
