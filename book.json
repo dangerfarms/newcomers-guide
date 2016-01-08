@@ -1,6 +1,9 @@
-{
-    "plugins": ["styles-sass"],
-    "styles": {
-        "website": "./styles/website.sass"
+    "plugins": [
+        "richquotes@0.0.7"
+    ],
+    "pluginsConfig": {
+        
+        "richquotes" : {
+            "default" : false
+        }
     }
-}
