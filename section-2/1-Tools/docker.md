@@ -6,7 +6,7 @@ We use docker in every project, so please install it now.
 
 To set up docker go to: https://docs.docker.com/engine/installation/ and follow the setup steps for your system.
 
-> > **Note** Note: this is a test.
+> **Note** Note: this is a test.
 
 
 **For Linux** make sure that you follow the "Create a Docker group" part after the installation of the docker engine.  
