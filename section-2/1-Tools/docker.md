@@ -6,12 +6,12 @@ We use docker in every project, so please install it now.
 
 To set up docker go to: https://docs.docker.com/engine/installation/ and follow the setup steps for your system.
 
->  **Note** **For Linux** make sure that you follow the "Create a Docker group" part after the installation of the docker engine.  
+Creating a docker group:
+>  **Note** **For Linux** make sure that you follow the "Create a Docker group" part after the installation of the docker engine. This will enable you to use docker as an unprivileged user.   
 Ubuntu: https://docs.docker.com/engine/installation/ubuntulinux/#create-a-docker-group  
 Fedora: https://docs.docker.com/engine/installation/fedora/#create-a-docker-group  
 For other distros please find it in the installation page.
 
-&nbsp;
 > **Note** **For Mac** you will need to install `docker-machine` as well.
 
 ##docker-compose
