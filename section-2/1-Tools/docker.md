@@ -4,7 +4,7 @@ Docker allows you to package an application with all of its dependencies into a 
 
 We use docker in every project, so please install it now.
 
-To set up docker go to: https://docs.docker.com/engine/installation/ and follow the guide lines for your system.
+To set up docker go to: https://docs.docker.com/engine/installation/ and follow the setup steps for your system.
 
 **For Linux** make sure that you follow the "Create a Docker group" part after the installation of the docker engine.  
 Ubuntu: https://docs.docker.com/engine/installation/ubuntulinux/#create-a-docker-group  
