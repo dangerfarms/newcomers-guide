@@ -4,6 +4,6 @@
         "styles-sass"
     ],
      "styles": {
-        "website": "./styles/website.sass"
+        "website": "./styles/website.scss"
     }
 }
