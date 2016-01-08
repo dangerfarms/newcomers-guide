@@ -5,5 +5,5 @@
    * [About Dangerfarms](section-1/1-Introduction/about_dangerfarms.md)
 
 * [Tools](section-2/1-Tools/README.md)
-   * [About Dangerfarms](section-2/1-Tools/docker.md)
+   * [Docker](section-2/1-Tools/docker.md)
 
