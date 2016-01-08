@@ -1,7 +1,7 @@
 blockquote.alert > .fa {
-    display: none !important;
+    display: none !important; // Hide ugly icons
 }
 
 blockquote.alert {
-    color: #555 !important;
+    color: #555 !important; // Increase contrast
 }
