@@ -15,9 +15,5 @@ If you are not familiar with the github workflows, please read up on this tutori
 
 We are currently not using branching for each task, but it is good to understand that as well.
 
-To learn about our workflow, please read .
-Our workflow is as follows:
-1. You get assigned to a task (an issue on the github repo, appears as a ticket on the waffle board)
-2. As soon as you start reading the specifications, move your task into the "In progress" column on waffle.
-3. If you are stuck with anything for over 15 minutes, let one of us know on slack.
+To learn about our workflow, please read [2.2 Workflow](section-2/2-Workflow/README.md).
 
