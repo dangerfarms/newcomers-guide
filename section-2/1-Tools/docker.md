@@ -1,4 +1,4 @@
-##Docker
+#Docker
 
 Docker allows you to package an application with all of its dependencies into a standardized unit for software development. More details: https://www.docker.com/what-docker
 
@@ -15,12 +15,12 @@ For other distros please find it in the installation page.
 Docker machine:
 > **Note** **For Mac** you will need to install `docker-machine` as well.
 
-###docker-compose
+##docker-compose
 Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration. For more details see: https://docs.docker.com/compose/
 
 Please follow the installation instructions on the link above.
 
-###Practice
+##Practice
 Please take some time now and look through the docs for `docker` and `docker-compose` to familiarize yourself with these tools.
 
 Feel free to ask any questions.
