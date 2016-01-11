@@ -8,7 +8,12 @@ Our projects are in two separate projects in most cases. One is for the backend 
 
 If you need help, contact one of us on #slack. 
 
-## Working on a project
+## Sprints
+
+We organize our workload into Sprints. (Read more about the [Agile development process](https://en.wikipedia.org/wiki/Agile_software_development) on Wikipedia.)
+
+
+## Working on a task
 
 Our general workflow is as follows:
 1. You get assigned to a task (an issue on the github repo, appears as a ticket on the waffle board)
