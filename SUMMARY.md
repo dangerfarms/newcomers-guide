@@ -2,7 +2,7 @@
 
 * [Newcomers Guide](README.md)
 * [Introduction](section-1/1-Introduction/README.md)
-   * [About Dangerfarms](section-1/1-Introduction/index.html#about-dangerfarms)
+   * [About Dangerfarms](section-1/1-Introduction/about_dangerfarms.md)
 
 * [Before you start working with us](section-2/README.md)
     * [Tools](section-2/1-Tools/README.md)
