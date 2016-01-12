@@ -15,5 +15,7 @@ If you are not familiar with the github workflows, please read up on this tutori
 
 We are currently not using branching for each task, but it is good to understand that as well.
 
+You will always work on the `development` branch of our projects.
+
 To learn about our workflow, please read [2.2 Workflow](https://dangerfarms.gitbooks.io/newcomers-guide/content/section-2/2-Workflow/index.html).
 
