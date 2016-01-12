@@ -10,7 +10,7 @@
     },
     "pluginsConfig": {
             "edit-link": {
-                "base": "https://github.com/dangerfarms/newcomers-guide/edit/master/",
+                "base": "https://www.gitbook.com/book/dangerfarms/newcomers-guide/edit#/edit/master/",
                 "label": "Edit This Page"
             }
     }
