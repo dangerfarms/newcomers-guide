@@ -1,7 +1,8 @@
 {    
     "plugins": [
         "richquotes",
-        "styles-sass"
+        "styles-sass",
+         "anchors"
     ],
      "styles": {
         "website": "./styles/website.scss"
