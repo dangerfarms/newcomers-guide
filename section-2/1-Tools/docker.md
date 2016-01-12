@@ -2,6 +2,8 @@
 
 Docker allows you to package an application with all of its dependencies into a standardized unit for software development. More details: https://www.docker.com/what-docker
 
+By using docker we can be sure that the development environment matches the production environment, including all dependencies, etc.
+
 We use docker in every project, so please install it now.
 
 To set up docker go to: https://docs.docker.com/engine/installation/ and follow the setup steps for your system.
