@@ -5,3 +5,17 @@ blockquote.alert > .fa {
 blockquote.alert {
     color: #555 !important; // Increase contrast
 }
+
+blockquote.clearfix.alert.alert-info::before {
+    content: 'Note';
+    height: 25px;
+    max-height: 20px;
+    background: cornflowerblue;
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    left: -18px;
+    padding: 6px 16px;
+}
