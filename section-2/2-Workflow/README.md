@@ -6,6 +6,13 @@ When you start working on a new project, follow the README.md file located in th
 
 Our projects are in two separate projects in most cases. One is for the backend (or API), the other is for the frontend (or client) code.
 
+The project contain a bash script `.danger` that can should be run when you first set up the project:
+```bash
+./.danger
+```
+
+It will provide you with information about missing dependencies, and so on. Pay attention to the output, and follow recommendations.
+
 If you need help, contact one of us on #slack. 
 
 ## Sprints
