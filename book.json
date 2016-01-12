@@ -2,9 +2,16 @@
     "plugins": [
         "richquotes",
         "styles-sass",
-         "anchors"
+        "anchors",
+        "edit-link"
     ],
      "styles": {
         "website": "./styles/website.scss"
+    },
+    "pluginsConfig": {
+            "edit-link": {
+                "base": "https://github.com/dangerfarms/newcomers-guide/edit/master/",
+                "label": "Edit This Page"
+            }
     }
 }
