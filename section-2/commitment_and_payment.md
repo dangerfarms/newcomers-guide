@@ -1,6 +1,6 @@
 # Commitment and Payment
 
-> **Note** Everything in this chapter is subject to change. Please contact a gluer for up to date information.
+> **Note** Everything in this chapter is subject to change. Please contact us for up to date information.
 
 ## Commitment
 
