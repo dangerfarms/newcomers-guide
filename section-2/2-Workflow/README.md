@@ -24,3 +24,7 @@ Our general workflow is as follows:
 6. Move your ticket to 'For testing', and either comment on the ticket @mentioning one of the gluers, or let us know you are done on slack.
 
 > **Note** If you are stuck with anything for over 15 minutes, let one of the gluers know on slack.
+
+# Commitment and payment
+
+> **Note** Everything in this chapter is subject to change. Please contact a gluer for up to date information.
