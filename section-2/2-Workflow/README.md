@@ -29,5 +29,7 @@ Our general workflow is as follows:
 4. Refactor, commit, push.
 5. Repeat steps 3 and 4 until task is done.
 6. Move your ticket to 'For testing', and either comment on the ticket @mentioning one of the gluers, or let us know you are done on slack.
+7. A gluer reviews your task, and moves it back to 'In progress' if further work is needed.
+8. Repeat steps 3-7 until task marked done by the gluer.
 
 > **Note** If you are stuck with anything for over 15 minutes, let one of the gluers know on slack.
