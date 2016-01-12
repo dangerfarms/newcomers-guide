@@ -6,7 +6,9 @@ By using docker we can be sure that the development environment matches the prod
 
 We use docker in every project, so please install it now.
 
-To set up docker go to: https://docs.docker.com/engine/installation/ and follow the setup steps for your system.
+##Install docker-engine
+
+To set up docker go to: https://docs.docker.com/engine/installation/ and follow the setup steps for your system closely.
 
 Creating a docker group:
 >  **Note** **For Linux** make sure that you follow the "Create a Docker group" part after the installation of the docker engine. This will enable you to use docker as an unprivileged user.   
@@ -17,7 +19,7 @@ For other distros please find it in the installation page.
 Docker machine:
 > **Note** **For Mac** you will need to install `docker-machine` as well.
 
-##docker-compose
+##Install docker-compose
 Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a Compose file to configure your application’s services. Then, using a single command, you create and start all the services from your configuration. For more details see: https://docs.docker.com/compose/
 
 Please follow the installation instructions on the link above.
