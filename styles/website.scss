@@ -4,8 +4,7 @@ blockquote.alert > .fa {
 
 blockquote.alert {
     color: #555 !important; // Increase contrast
-    border: none;
-    border-left: none;
+    border: none !important;
 }
 
 blockquote.clearfix.alert.alert-info::before {
