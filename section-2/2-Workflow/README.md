@@ -35,7 +35,16 @@ Our general workflow is as follows:
 > **Note** If you are stuck with anything for over 15 minutes, let one of the gluers know on slack.
 
 ### Communication
+Our communication protocol is aimed at providing the most efficient help for everyone, while not distracting people too much from their own workflow.
 
+Please follow these steps when you are facing a problem.
+
+1. If you face a problem, try to solve it. Most issues are easily resolved by google + stack overflow.
+1. If you haven't got a solution in 15 minutes, ask your question in the #students room. Try to answer others' questions in this room.
+1. If after a further 10 minutes there is no answer (or no one is online in the #students room), ask your question in the project room
+1. If no one responds, try direct messaging someone.
+
+> **Note** **The last thing we want is to discourage you from asking questions**. However the gluers need to get on with our own development tasks, too.
 
 ### Commit message syntax
 Your commit messages should be in the imperative form (as if you are telling git what to do) and be capitalised.
