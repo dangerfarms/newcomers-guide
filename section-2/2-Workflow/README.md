@@ -20,7 +20,7 @@ If you need help, contact one of us on #slack.
 We organize our workload into Sprints. (Read more about the [Agile development process](https://en.wikipedia.org/wiki/Agile_software_development) on Wikipedia.)
 
 
-## Working on a task
+## Working on a task (Git workflow)
 
 Our general workflow is as follows:
 1. You get assigned to a task (an issue on the github repo, appears as a ticket on the waffle board)
@@ -33,3 +33,21 @@ Our general workflow is as follows:
 8. Repeat steps 3-7 until task marked done by the gluer.
 
 > **Note** If you are stuck with anything for over 15 minutes, let one of the gluers know on slack.
+
+### Communication
+
+
+### Commit message syntax
+Your commit messages should be in the imperative form (as if you are telling git what to do) and be capitalised.
+
+The commit message must start with the issue number you are working on.
+
+Correct examples:  
+`#213: Add new API endpoint to retrieve Users`  
+`#214: Fix broken tests for Users`  
+`#215: Hook up User Profile frontend with API`  
+
+Incorrect examples:  
+`added new API endpoint to retrieve Users` (no issue number, no capital, not imperative)  
+`#215: add new API endpoint to retrieve Users` (no capital A)  
+`#214: Added new API endpoint to retrieve Users` (not imperative form)  
