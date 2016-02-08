@@ -16,4 +16,13 @@ Coming soon.
 ### Unit testing
 We use Jasmine as our test framework: http://jasmine.github.io/2.0/introduction.html
 
+#### IDE setup
+In WebStorm you can add auto-completion for `jasmine` by the following steps:
+
+1. Open Settings
+2. Go to Languages & Frameworks > JavaScript > Libraries
+3. Click Download...
+4. Add `jasmine`
+5. Restart WebStorm
+
 TBC.
