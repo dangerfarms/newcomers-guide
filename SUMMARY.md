@@ -8,7 +8,7 @@
     * [Tools](section-2/1-Tools/README.md)
         * [Docker](section-2/1-Tools/docker.md)
         * [Git](section-2/1-Tools/git.md)
-    * [Code quality](section-2/1-Tools/code-quality.md)
+    * [Code quality](section-2/code-quality.md)
     * [Workflow](section-2/2-Workflow/README.md)
     * [Commitment and Payment](section-2/commitment_and_payment.md)
 * [Frontend](section-3/README.md)
