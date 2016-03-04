@@ -9,7 +9,7 @@ Please read the `.eslint.yml` and `.flake8` files and understand rules. If you h
 
 In your IDE you should set up linting so that you can make use of static analysis (i.e. error highlighting while typing).
 
-## Rules
+## General rules
 
 ### Never commit commented out code.
 
