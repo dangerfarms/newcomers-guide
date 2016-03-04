@@ -1,11 +1,23 @@
 # Code Quality
 
 ## Linting
-Coming soon
 
-## Comments
-Do not commit commented out code.
+We use ESLint (ES6) and Flake 8 (Python) to run code quality checks on the code before committing.
+Please inspect their output and fix any errors and warnings before committing.
+
+Please read through the `.eslint.yml` and `.flake8` files to see all rules.
+
+In your IDE you should set up linting so that you can make use of static analysis (i.e. error highlighting while typing).
+
+## Rules
+
+### Never commit commented out code.
 
 We have a repo so that we can go back to older versions simply.
 
-If you need to make inline comments, rethink your code. Maybe there is too much complexity? Name your variables in a way that it is easy to read your code, and you might find that your comment is not necessary after all.
+### Think twice before committing comments.
+If you need to make inline comments, rethink your code.   
+Maybe there is too much complexity?  
+Name your variables in a way that it is easy to read your code, and you might find that your comment is not necessary after all.
+
+
