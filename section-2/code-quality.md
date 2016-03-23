@@ -20,8 +20,14 @@ If you need to make inline comments, rethink your code.
 Maybe there is too much complexity?  
 Name your variables in a way that it is easy to read your code, and you might find that your comment is not necessary after all.
 
-
 ## Javascript / ES6 specific rules
+
+### Error messages must include the name of the component
+Error messages must include the name of the component they are coming from otherwise it is difficult to see what they refer to.
+Company convention is to follow the pattern below:
+```
+$log.error(`[${Component.NAME}] error message`);
+```
 
 ## Python specific rules
 
