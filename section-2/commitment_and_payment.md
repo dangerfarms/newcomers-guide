@@ -4,13 +4,13 @@
 
 ## Commitment
 
-We require you to commit to a certain number of hours per week. 
+We require you to commit to a certain number of points per week, at a minimum of 8 points per week.
 
-The number of hours per week will be agreed upon for each month.
+The number of points per week will be agreed upon for each month in advance.
 
-We guarantee to deliver enough tasks for you to fill those hours. In case we fail to deliver, you will get paid for the agreed number of hours.
+We guarantee to deliver enough tasks for you to fill those points. In case we fail to deliver, you will get paid for the agreed number of points.
 
-In case you are assigned to a task, but fail to complete it by the deadline, you will not be paid, or only a part of the original amount will be paid. It is up to the gluers to decide how much will you be paid, in this case.
+In case you are assigned to a task, but fail to complete it by the deadline, you will not be paid, or only a part of the original amount will be paid. It is up to the gluers to decide how much will you be paid in this case.
 
 ## Estimate and price
 
