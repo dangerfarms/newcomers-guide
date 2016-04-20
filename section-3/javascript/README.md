@@ -13,6 +13,10 @@ http://ilikekillnerds.com/2015/02/a-guide-to-es6-classes/
 ## AngularJS 1.x
 Coming soon.
 
+### Components
+
+* Prefix components with `wc-`. This prevents namespace collisions with 3rd party directives or future standard HTML tags. It also prepares our components for publishing.
+
 ### Unit testing
 We use Jasmine as our test framework: http://jasmine.github.io/2.0/introduction.html
 
