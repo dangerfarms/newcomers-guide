@@ -17,7 +17,7 @@ Coming soon.
 
 * Prefix custom directives (components) with `df` to namespace them. This prevents collisions with 3rd party directives or future standard HTML tags. It also prepares our components for publishing.
 
-  If the directive is not reusable across projects, then use a project-specific namespace instead.
+  If the directive is not reusable across projects, use a project-specific namespace instead.
 
 ### Unit testing
 We use Jasmine as our test framework: http://jasmine.github.io/2.0/introduction.html
