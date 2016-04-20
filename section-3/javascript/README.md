@@ -15,7 +15,9 @@ Coming soon.
 
 ### Code structure
 
-* Prefix custom directives (components) with `wc` to namespace them. This prevents collisions with 3rd party directives or future standard HTML tags. It also prepares our components for publishing.
+* Prefix custom directives (components) with `df` to namespace them. This prevents collisions with 3rd party directives or future standard HTML tags. It also prepares our components for publishing.
+
+  If the directive is not reusable across projects, then use a project-specific namespace instead.
 
 ### Unit testing
 We use Jasmine as our test framework: http://jasmine.github.io/2.0/introduction.html
