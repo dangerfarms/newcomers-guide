@@ -17,7 +17,7 @@ Coming soon.
 
 * Prefix custom directives (components) with `df` to namespace them. This prevents collisions with 3rd party directives or future standard HTML tags. It also prepares our components for publishing.
 
-  If the directive is not reusable across projects, use a project-specific namespace instead.
+  If the directive is not reusable across projects, use a project-specific namespace-prefix instead.
 
 ### Unit testing
 We use Jasmine as our test framework: http://jasmine.github.io/2.0/introduction.html
@@ -30,6 +30,25 @@ In WebStorm you can add auto-completion for `jasmine` by the following steps:
 3. Click Download...
 4. Add `jasmine`
 5. Restart WebStorm
+
+### Dependency Injection
+We are using `ngAnnotate` to automate dependency injections. Define the dependencies for your directives, controllers, services, etc as follows:
+```
+let myService = ($scope) => {
+    // Do stuff
+}
+
+export default /*@ngInject*/myService;
+```
+Or for elements defined as classes:
+```
+class Controller {
+  /*@ngInject*/
+  constructor(someService) {
+    // Do stuff
+  }
+}
+```
 
 TBC.
 
@@ -66,25 +85,6 @@ Name your services/factories, same way as described above for directives.
 
 #### Controllers, modules, routers, runs, configs
 Controllers, modules, routers, runs, configs, etc do not need a separate NAME specified.
-
-### Dependency Injection
-We are using `ngAnnotate` to automate dependency injections. Define the dependencies for your directives, controllers, services, etc as follows:
-```
-let myService = ($scope) => {
-    // Do stuff
-}
-
-export default /*@ngInject*/myService;
-```
-Or for elements defined as classes:
-```
-class Controller {
-  /*@ngInject*/
-  constructor(someService) {
-    // Do stuff
-  }
-}
-```
 
 ### Inline controllers
 For inline controllers (e.g. in dialogs, etc), you can annotate your code with `/*@ngInject*/`, which will allow a 
