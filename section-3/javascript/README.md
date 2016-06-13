@@ -68,15 +68,22 @@ Name your services/factories, same way as described above for directives.
 Controllers, modules, routers, runs, configs, etc do not need a separate NAME specified.
 
 ### Dependency Injection
-Define the dependencies for your directives, controllers, services, etc as follows:
+We are using `ngAnnotate` to automate dependency injections. Define the dependencies for your directives, controllers, services, etc as follows:
 ```
 let myService = ($scope) => {
     // Do stuff
 }
 
-myService.$inject = ['$scope'];
-
-export default myService;
+export default /*@ngInject*/myService;
+```
+Or for elements defined as classes:
+```
+class Controller {
+  /*@ngInject*/
+  constructor(someService) {
+    // Do stuff
+  }
+}
 ```
 
 ### Inline controllers
