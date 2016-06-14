@@ -1,8 +1,17 @@
 # Django
 
+## Tutorials
+Coming soon
+
+## Bits and bobs
+Coming soon
+
+### Multiple inheritance, mixins
+Coming soon (Combine classes in a super class created for this reason to keep things dry) 
+
 ## Unit testing
 
-TBA
+Coming soon
 
 ### Naming conventions
 
