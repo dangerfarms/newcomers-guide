@@ -3,7 +3,7 @@ This chapter aims to answer common questions and prevent frequent mistakes made 
 
 We are using ES6.
 
-> Note: This whole chapter is under construction. Take care!
+> **Note** This whole chapter is under construction. Take care!
 
 More coming soon.
 
