@@ -3,15 +3,28 @@ This chapter aims to answer common questions and prevent frequent mistakes made 
 
 We are using ES6.
 
-TBC.
+> Note: This whole chapter is under construction. Take care!
+
+More coming soon.
 
 ## ES6
-Coming soon.  
 https://babeljs.io/docs/learn-es2015/  
 http://ilikekillnerds.com/2015/02/a-guide-to-es6-classes/  
 
+More coming soon.  
+
 ## AngularJS 1.x
-Coming soon.
+
+
+In this order:
+
+https://thinkster.io/mean-stack-tutorial
+
+https://thinkster.io/angularjs-es6-tutorial (Make sure you go thorugh the required prerequisits links)
+
+https://toddmotto.com/rewriting-angular-styleguide-angular-2 and obviously https://github.com/toddmotto/angular-styleguide
+
+More coming soon.
 
 ### Code structure
 
@@ -19,8 +32,12 @@ Coming soon.
 
   If the directive is not reusable across projects, use a project-specific namespace-prefix instead.
 
+More coming soon.
+
 ### Unit testing
 We use Jasmine as our test framework: http://jasmine.github.io/2.0/introduction.html
+
+More coming soon.
 
 #### IDE setup
 In WebStorm you can add auto-completion for `jasmine` by the following steps:
@@ -49,8 +66,6 @@ class Controller {
   }
 }
 ```
-
-TBC.
 
 
 ## Writing minification-ready code (using webpack)
@@ -85,24 +100,3 @@ Name your services/factories, same way as described above for directives.
 
 #### Controllers, modules, routers, runs, configs
 Controllers, modules, routers, runs, configs, etc do not need a separate NAME specified.
-
-### Inline controllers
-For inline controllers (e.g. in dialogs, etc), you can annotate your code with `/*@ngInject*/`, which will allow a 
-plugin to inject your inline controller.
-```
-let MemberSearchOverlayController = ($scope, callbacks, MemberFilter) => {
-    // ...
-};
-
-class ClientsController {
-  // ...
-
-    this.$mdDialog.show({
-      controller: /*@ngInject*/MemberSearchOverlayController,
-      locals: {
-       callbacks: this.callbacks,
-       MemberFilter: this.MemberFilter
-      }
-    });
-}
-```
