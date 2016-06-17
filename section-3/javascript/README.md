@@ -18,11 +18,13 @@ More coming soon.
 
 In this order:
 
+https://docs.angularjs.org/tutorial
+
 https://thinkster.io/mean-stack-tutorial
 
 https://thinkster.io/angularjs-es6-tutorial (Make sure you go thorugh the required prerequisits links)
 
-https://toddmotto.com/rewriting-angular-styleguide-angular-2 and obviously https://github.com/toddmotto/angular-styleguide
+https://github.com/toddmotto/angular-styleguide
 
 More coming soon.
 
@@ -68,11 +70,11 @@ class Controller {
 ```
 
 
-## Writing minification-ready code (using webpack)
+### Writing minification-ready code (using webpack)
 
-### Naming
+#### Naming
 
-#### Directives
+##### Directives
 Name your directive:
 ```
 let myDirective = () => {
@@ -95,8 +97,11 @@ angular.module('module', [])
        .directive(myDirective.NAME, myDirective) // The directive is available as <my-directive> in the code
 ```
 
-#### Services
+##### Services
 Name your services/factories, same way as described above for directives.
 
-#### Controllers, modules, routers, runs, configs
+##### Controllers, modules, routers, runs, configs
 Controllers, modules, routers, runs, configs, etc do not need a separate NAME specified.
+
+## React
+More coming soon.
