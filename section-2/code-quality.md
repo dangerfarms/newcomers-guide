@@ -3,21 +3,21 @@
 ## Linting
 
 We use ESLint (ES6) and Flake 8 (Python) to run code quality checks on the code before committing.
-Please inspect their output and fix any errors and warnings before committing.
+Please inspect the output of the scripts and fix any errors and warnings before committing.
 
 Please read the `.eslint.yml` and `.flake8` files and understand rules. If you have any questions or suggestions, let us know.
 
-In your IDE you should set up linting so that you can make use of static analysis (i.e. error highlighting while typing).
+In your IDE you should set up linting so that you can make use of static analysis (i.e. error highlighting while typing), according to the rules that are specified for the project.
 
 ## General rules
 
 ### Never commit commented out code.
-We have a repo so that we can go back to older versions simply.
+We have a code repository for a reason: we can go back to older versions.
 
 ### Think twice before committing comments.
 If you need to make inline comments, rethink your code.   
-Maybe there is too much complexity?  
-Name your variables in a way that it is easy to read your code, and you might find that your comment is not necessary after all.
+Maybe your code is too complex?  
+Name your variables in a way that it is easy to read your code, and you might find that comments are not necessary after all.
 
 ### Keep things organized
 It helps maintenance to keep the following things in alphabetical order:
@@ -42,5 +42,36 @@ $log.error(`[${Component.NAME}] error message`);
 ```
 
 ## Python specific rules
+
+### Multiple inheritence
+[Multiple inheritence](https://docs.python.org/2/tutorial/classes.html#multiple-inheritance) can be a bit confusing. What overwrites what?
+
+Multiple inheritence patterns often repeat throughout the code.
+
+For the above to reasons, the best practice is to create a class that is only responsible for combining the classes.
+
+Example:
+
+```python
+class SomethingBehaviourClass:
+    def something(self):
+        pass
+
+
+class Mixin:
+    def something(self):
+        pass
+
+    def other(self):
+        pass
+
+
+class SomethingBehaviourClassWithMixin(SomethingBehaviourClass, Mixin):
+    pass
+
+
+class ActualClass(SomethingBehaviourClassWithMixin):
+    pass
+```
 
 ## CSS / Sass / Scss specific rules
