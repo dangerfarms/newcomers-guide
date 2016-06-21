@@ -12,13 +12,25 @@ In your IDE you should set up linting so that you can make use of static analysi
 ## General rules
 
 ### Never commit commented out code.
-
 We have a repo so that we can go back to older versions simply.
 
 ### Think twice before committing comments.
 If you need to make inline comments, rethink your code.   
 Maybe there is too much complexity?  
 Name your variables in a way that it is easy to read your code, and you might find that your comment is not necessary after all.
+
+### Keep things organized
+It helps maintenance to keep the following things in alphabetical order:
+- css attributes,
+- javascript object keys
+- angular depenency injection arguments
+- python class properties
+- list of field names in serializers
+- ...
+
+Your IDE should have a plugin for organising highlighted blocks of code.
+
+For WebStorm / PyCharm the [Line sorter](https://plugins.jetbrains.com/plugin/?idea&id=4055) plugin does the job.
 
 ## Javascript / ES6 specific rules
 
