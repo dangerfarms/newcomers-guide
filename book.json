@@ -2,7 +2,6 @@
     "plugins": [
         "richquotes",
         "styles-sass",
-        "anchors",
         "edit-link"
     ],
      "styles": {
