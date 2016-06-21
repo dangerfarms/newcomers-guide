@@ -1,8 +1,9 @@
 {    
     "plugins": [
+        "anchors",
+        "edit-link",
         "richquotes",
-        "styles-sass",
-        "edit-link"
+        "styles-sass"
     ],
      "styles": {
         "website": "./styles/website.scss"
