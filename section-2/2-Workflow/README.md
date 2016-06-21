@@ -22,15 +22,21 @@ We organize our workload into Sprints. (Read more about the [Agile development p
 
 ## Working on a task (Git workflow)
 
-Our general workflow is as follows:
+Our general workflow is based on the [GitHub Flow](https://guides.github.com/introduction/flow/). (The major difference is that we "deploy" to the development branch for further QA from the client.)
+
+Here is the detailed workflow:
+
 1. You get assigned to a task (an issue on the github repo, appears as a ticket on the waffle board)
-2. As soon as you start reading the specifications, move your task into the "In progress" column on waffle.
-3. Once a sub-task (an item with a check-box in the issue description) is complete, commit your work, push. Once pushed, tick the corresponding check-box.
-4. Refactor, commit, push.
-5. Repeat steps 3 and 4 until task is done.
-6. Move your ticket to 'For testing', and either comment on the ticket @mentioning one of the gluers, or let us know you are done on slack.
-7. A gluer reviews your task, and moves it back to 'In progress' if further work is needed.
-8. Repeat steps 3-7 until task marked done by the gluer.
+1. As soon as you start reading the specifications, move your task into the "In progress" column on waffle.
+1. Create a new branch: `git checkout -b <issue-number>-<kebab-cased-issue-name>`
+1. Once a sub-task (an item with a check-box in the issue description) is complete, commit your work, and push. Once pushed, tick the corresponding check-box.
+1. Refactor your code, commit, and push.
+1. Repeat steps 4 and 5 until your task is done.
+1. Create a new Pull Request on your branch.
+1. Move your ticket to 'For testing' on waffle'.
+1. Let a gluer know your task is ready for reviewing.
+1. A gluer will review your task, and move it back to 'In progress' if further work is needed.
+1. Repeat steps 4-10 until task marked done by the gluer.
 
 > **Note** If you are stuck with anything for over 15 minutes, let one of the gluers know on slack.
 
