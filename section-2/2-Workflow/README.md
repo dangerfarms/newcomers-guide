@@ -28,15 +28,16 @@ Here is the detailed workflow:
 
 1. You get assigned to a task (an issue on the github repo, appears as a ticket on the waffle board)
 1. As soon as you start reading the specifications, move your task into the "In progress" column on waffle.
-1. Create a new branch: `git checkout -b <issue-number>-<kebab-cased-issue-name>`
+1. Create a new branch: `git checkout -b <issue-number>-<kebab-cased-issue-name>`. Note do not include the hash (#) in your branch name. `#1: Do something` -> `1-do-something`
 1. Once a sub-task (an item with a check-box in the issue description) is complete, commit your work, and push. Once pushed, tick the corresponding check-box.
 1. Refactor your code, commit, and push.
-1. Repeat steps 4 and 5 until your task is done.
+1. Merge the development branch into your branch: `git pull origin development`
+1. Repeat steps 4-6 until your task is done.
 1. Create a new Pull Request on your branch.
 1. Move your ticket to 'For testing' on waffle'.
 1. Let a gluer know your task is ready for reviewing.
 1. A gluer will review your task, and move it back to 'In progress' if further work is needed.
-1. Repeat steps 4-10 until task marked done by the gluer.
+1. Repeat steps 4-11 until task marked done by the gluer.
 
 > **Note** If you are stuck with anything for over 15 minutes, let one of the gluers know on slack.
 
