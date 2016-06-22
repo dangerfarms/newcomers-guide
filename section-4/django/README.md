@@ -1,20 +1,31 @@
-# Django
+# Django and Django Rest Framework
 
 ## Tutorials
-Coming soon
+https://docs.djangoproject.com/en/1.9/intro/tutorial01/
+http://www.django-rest-framework.org/tutorial/1-serialization/
 
 ## Common issues
-Coming soon
+In this section you will find pointers and solutions for common issues. Please read this section carefully and check back for updates.
 
 ### Multiple inheritance, mixins
 Coming soon (Combine classes in a super class created for this reason to keep things dry) 
 
-### Migrations (to be written up properly)
-Migrations are basically translated into (in our case) SQL queries
-When you apply a migration, django executes some SQL queries on the DB instance
-So if you apply migration 0002, it will create columns etc on that table
-Then you switch back to another branch, that has 0001 as the latest migration
-0001 is applied
+### Migrations
+Migrations are created automatically by Django when running the `makemigrations` management command. 
+Migrations can be applied by running the `migrate` management command.
+Read more about migrations in [the official docs](https://docs.djangoproject.com/en/1.9/topics/migrations/) (v 1.9).
+
+When you apply a migration, Django generates some SQL queries and executes them on the DB instance.
+
+#### Working with migrations on different branches
+As the database is not part of the git architecture, it will not change when you switch branches. 
+
+For example you are working on a branch `1-add-new-column-to-example`. 
+
+You create and apply a certain migration (`0002`) of app `examples` which creates a column `new_column` on the database table `examples_example`.
+
+Then you switch back to another branch, that has `0001` as the latest migration for the `example` app. If you run `./
+
 No further migrations are required
 -> `No migrations to apply`
 If you want to go back to another branch, what you need to do is the following:
