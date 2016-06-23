@@ -6,7 +6,7 @@ We use several build tools and libraries across our frontend projects. These are
 
 NPM is the package manager for JavaScript.
 
-You'll need it installed on your system to work on any of our frontend projects. NPM comes bundled with Node.js.
+You'll need it installed on your system to work on any of our frontend projects. NPM comes bundled with [Node.js](https://dangerfarms.gitbooks.io/newcomers-guide/content/section-3/toolchain.html#nodejs).
 
 Once you have NPM, you will be able to install everything else you need by running `npm install` from inside our projects.
 
