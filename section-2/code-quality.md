@@ -43,35 +43,6 @@ $log.error(`[${Component.NAME}] error message`);
 
 ## Python specific rules
 
-### Multiple inheritence
-[Multiple inheritence](https://docs.python.org/2/tutorial/classes.html#multiple-inheritance) can be a bit confusing. What overwrites what?
-
-Multiple inheritence patterns often repeat throughout the code.
-
-For the above to reasons, the best practice is to create a class that is only responsible for combining the classes.
-
-Example:
-
-```python
-class SomethingBehaviourClass:
-    def something(self):
-        pass
-
-
-class Mixin:
-    def something(self):
-        pass
-
-    def other(self):
-        pass
-
-
-class SomethingBehaviourClassWithMixin(SomethingBehaviourClass, Mixin):
-    pass
-
-
-class ActualClass(SomethingBehaviourClassWithMixin):
-    pass
-```
+Coming soon.
 
 ## CSS / Sass / Scss specific rules
