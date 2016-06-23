@@ -98,13 +98,13 @@ If you are proving that a maximum of 2 objects are returned from a list, then ad
 
 Adding more data than necessary to prove a specific case is pointless and slows down the system.
 
-(This ties into the much broader point that you should be able to reason about every line of code to write. More on that later.)
+(This ties into the much broader point that you should be able to reason about every line of code to write. More on that another time.)
 
 **Mock out "slow" interfaces**
 
 In unit testing, slow running parts of a system tend to involve network requests such as external API calls or file transfers. Not only are these slow, but they can be non-deterministic, if for instance, an external service is down. Unit testing is about testing **your** code, and for many reasons, mocking should almost always be done for any kind of stream handling or external service.
 
-Please note that integration tests still need to be run, and 100% should be. There is no guarantee than an external service may change their API unexpectedly, and your application should find that out before deploying. But for development purposes, unit tests should be run more often to allow for better development speed.
+(Note that the goal of _integration tests_ is to test two or more parts of the app working together. There is no guarantee that an external service won't change their API unexpectedly, and should find that out before deploying the application. For development purposes however unit tests should be run more often to allow for better development speed.)
 
 ### Correct Tests
 
