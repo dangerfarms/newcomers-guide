@@ -2,6 +2,7 @@
     "plugins": [
         "anchors",
         "edit-link",
+        "include",
         "richquotes",
         "styles-sass"
     ],
