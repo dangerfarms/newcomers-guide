@@ -9,3 +9,5 @@ Before you begin work at Danger Farms, you will need to have satisfied the follo
 3. Understand the development work-flow
 
 !INCLUDE "1-Tools/README.md"
+
+!INCLUDE "2-Workflow/README.md"
