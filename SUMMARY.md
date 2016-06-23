@@ -13,7 +13,7 @@
    * [Code quality](section-2/code-quality.md)
 * [Frontend](section-3/README.md)
    * [JavaScript](section-3/javascript/README.md)
-   * Toolchain
+   * [Toolchain](section-3/toolchain.md)
 * [Backend](section-4/README.md)
    * [Django](section-4/django/README.md)
 
