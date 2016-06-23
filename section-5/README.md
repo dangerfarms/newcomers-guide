@@ -123,6 +123,7 @@ Let's show some examples:
 ```python
 def test_should_return_no_users_if_hide_is_True(self):
     """
+    **BAD**
     Here we are not proving that hide has any effect on the implementation
     because we have not created any users. The initial state of the system
     provides a false positive. 
@@ -133,13 +134,14 @@ def test_should_return_no_users_if_hide_is_True(self):
     users = service.get_users(hide=True)
     self.assertEqual(users.count(), 0)
 
-def test_should_update_user_when_endpoint_PATCHed_done_badly(self):
+def test_should_update_user_when_endpoint_PATCHed(self):
     """
+    **BAD**
     Here we are arranging the initial data correctly, but our assertions are too
     weak. The tests says SHOULD UPDATE therefore proving the response comes back
     is not enough.
 
-    See the next test for additional improvements.
+    See the next example for additional improvements.
     """
     user = User.objects.create()
     patch_data = {
@@ -149,15 +151,16 @@ def test_should_update_user_when_endpoint_PATCHed_done_badly(self):
     response = self.client.PATCH(self.url, patch_data)
     self.assertEqual(response.status_code, status.HTTP_200_OK)
 
-def test_should_update_user_when_endpoint_PATCHed_done_better(self):
+def test_should_update_user_when_endpoint_PATCHed(self):
     """
+    **BETTER**
     Now we add in a few subtle assertions that give us higher certainty
     that our code is correct.
     """
     user = User.objects.create()
     # After creating the user, prove their password is not already secure
     # as if our implementation just did nothing, this test would still pass
-    self.assertNotEqual(user.password, 'secure')
+    self.assertFalse(user.check_password('secure'))
     patch_data = {
         "password": "secure"
     }
@@ -167,7 +170,7 @@ def test_should_update_user_when_endpoint_PATCHed_done_better(self):
     # After the status_code assertion, we need to prove the User has been
     # updated.
     db_user = User.objects.get(id=user.id)
-    self.assertEqual(db_user.password, 'secure')
+    self.assertTrue(db_user.check_password('secure'))
 
 def test_should_showcase_a_good_way_to_test(self):
     """
@@ -193,21 +196,3 @@ def test_should_showcase_a_good_way_to_test(self):
 ```
 
 As said previously, creating many small, specific tests is a great way to focus effort and produce tests that are effective. Test Driven Development also helps by thinking about one test at a time.
-
-
-### Other Help
-
-This part is for Winter Circle advice. The above will eventually be moved to our book.
-
-Unless for a good reason, all TestCases using DRF views should subclass **wintercircle.common.tests.WinterCircleAPITestCase**.
-
-This provides some utility methods and fields to make tests easier to write, and more importantly **easier to read** and as said above this should always be at the front of your thoughts when writing tests.
-
-Please inspect the code and see what utility methods are available to you. Even better would be to add your own if you feel they can help with "story tests" and DRY.
-
-Thanks for reading, happy testing!
-
-
-### Python
-
-* Tests should start with test_
