@@ -1,6 +1,6 @@
-#Section 2
+#Before you start working with us
 
-In this section we will introduce you to our tools, and give an overview of our workflow.
+In this chapter we will introduce you to our tools, and give an overview of our workflow.
 
 Before you begin work at Danger Farms, you will need to have satisfied the following prerequisites:
 
