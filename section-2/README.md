@@ -11,3 +11,7 @@ Before you begin work at Danger Farms, you will need to have satisfied the follo
 !INCLUDE "1-Tools/README.md"
 
 !INCLUDE "2-Workflow/README.md"
+
+!INCLUDE "commitment_and_payment.md"
+
+!INCLUDE "code_quality.md"
