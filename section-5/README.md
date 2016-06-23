@@ -108,13 +108,15 @@ In unit testing, slow running parts of a system tend to involve network requests
 
 ### Correct Tests
 
-A correct test is one which tests what it should be testing - very meta :-). Or better put, it's one in which the initial state and final assertions can provide a high enough certainty that the code works, relative to the contract of the test name.
+A correct test is one which tests what it should be testing - very meta :-)
+
+Or, to put it in another way, a correct test is a test in which the initial state and final assertions can provide a high enough certainty that the code works, relative to the contract of the test name.
 
 In short:
 
-* Have meaningful test names
-* Create an initial state which can help to prove assertions
-* Be sure to make specific assertions which can prove your test
+- Have meaningful test names
+- Create an initial state which can help to prove assertions
+- Be sure to make specific assertions which can prove your test
 
 Let's show some examples:
 
