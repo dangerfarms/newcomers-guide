@@ -9,8 +9,36 @@ Make sure do go through these tutorials first. They explain the basic concepts a
 ## Common issues
 In this section you will find pointers and solutions for common issues. Please read this section carefully and check back for updates.
 
-### Multiple inheritance, mixins
-Coming soon (Combine classes in a super class created for this reason to keep things dry) 
+### Multiple inheritance (and mixins)
+[Multiple inheritence](https://docs.python.org/2/tutorial/classes.html#multiple-inheritance) can be a bit confusing. What overwrites what?
+
+Multiple inheritence patterns often repeat throughout the code.
+
+For the above to reasons, the best practice is to create a class that is only responsible for combining the classes.
+
+Example:
+
+```python
+class SomethingBehaviourClass:
+    def something(self):
+        pass
+
+
+class Mixin:
+    def something(self):
+        pass
+
+    def other(self):
+        pass
+
+
+class SomethingBehaviourClassWithMixin(SomethingBehaviourClass, Mixin):
+    pass
+
+
+class ActualClass(SomethingBehaviourClassWithMixin):
+    pass
+```
 
 ### Migrations
 Migrations are created automatically by Django when running the `makemigrations` management command. 
