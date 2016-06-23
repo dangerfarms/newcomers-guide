@@ -1,8 +1,8 @@
 # Frontend
 In this section you will read about the languages we use in our frontend code. You will also learn about the best practices that apply to those languages.
 
-!IMPORT "./javascript/README.md"
+!INCLUDE "./javascript/README.md"
 
-!IMPORT "./toolchain.md"
+!INCLUDE "./toolchain.md"
 
-!IMPORT "./angular_1x.md"
+!INCLUDE "./angular_1x.md"
