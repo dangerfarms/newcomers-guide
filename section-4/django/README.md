@@ -3,8 +3,8 @@
 ## Tutorials
 Make sure do go through these tutorials first. They explain the basic concepts and help with initial setup as well.
 
-[Official Django Docs (v1.9)](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)
-http://www.django-rest-framework.org/tutorial/1-serialization/
+[Official Django Tutorial (v1.9)](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)  
+[Official Django Rest Framework Tutorial](http://www.django-rest-framework.org/tutorial/1-serialization/)
 
 ## Common issues
 In this section you will find pointers and solutions for common issues. Please read this section carefully and check back for updates.
