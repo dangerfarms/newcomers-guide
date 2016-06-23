@@ -1,4 +1,4 @@
-# Summary
+# Table of Contents
 
 * [Newcomers Guide](README.md)
 * [Introduction](section-1/1-Introduction/README.md)
