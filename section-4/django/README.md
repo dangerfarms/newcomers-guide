@@ -95,7 +95,16 @@ This makes it possible to apply the new migration to existing (e.g. production) 
 - Minimize the number of SQL queries executed.
 
 - When defining a ForeignKey field, think about, and explicitly set the `on_delete` parameter.
+
 ### Naming conventions
+
+#### File structure
+Coming soon.
+
+#### Classes (Test cases)
+Coming soon.
+
+#### Methods (Unit tests)
 
 Methods in a class that subclasses `TestCase` are run automatically if and only if their name starts with `test`.
 
