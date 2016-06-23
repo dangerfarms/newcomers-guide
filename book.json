@@ -3,6 +3,7 @@
         "anchors",
         "edit-link",
         "include",
+        "include-highlight",
         "richquotes",
         "styles-sass"
     ],
