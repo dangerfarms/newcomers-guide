@@ -121,3 +121,17 @@ def test_should_not_set_completed_if_required_fields_are_blank(self):
     # The subject (client profile) is clear from the context, 
     # since we are testing client profiles only in this test case.
 ```
+
+### Troubleshooting
+
+#### `ImportError` when running tests.
+
+##### Error
+`ImportError: 'tests' module incorrectly imported from 'blah/tests'. Expected 'blah'. Is this module globally installed?` 
+
+##### Reason
+The error is due to the directory `blah` having both a `tests.py` file and `tests/__init__.py` file, resulting in two possible sources for `blah.tests`. 
+
+##### Solution
+Move the contents from `tests.py` inside one of the test files in `tests/`, and remove `tests.py`.
+
