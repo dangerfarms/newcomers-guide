@@ -26,29 +26,36 @@ For example you are working on a branch `1-add-new-column-to-example`.
 
 You create and apply a certain migration (`0002`) of app `examples` which creates a column `new_column` on the database table `examples_example`.
 
-Then you switch back to another branch, that has `0001` as the latest migration for the `example` app. If you run `./
+Then you switch back to another branch, that has `0001` as the latest migration file for the `example` app. If you run `./manage.py migrate` now, no migrations will be applied as that is already in the database. The `migrate` management command doesn't know that it should revert something.
 
-No further migrations are required
--> `No migrations to apply`
-If you want to go back to another branch, what you need to do is the following:
-```
-git checkout <branch>
-./manage.py migrate <package name> <migrations number to go back to e.g. 0001>
-git checkout development
-```
-I.e. you need to reverse the migration
-Reversing the migration is, again, a set of SQL commands that are run on the DB instance
-If you created a field, the reverse will remove it etc.
+This can lead to inconsistencies and database errors.
 
-On the other issue about removing `null=True` from an existing field (or adding a new required field to the model for that matter):
-When you remove `null=True` the migration would create a requirement in the DB such that a field cannot be NULL.
-But that would cause issues, if you already had some NULL values in the table
-So it offers you a chance to assign a defult value ​_in the migration_​ (it does this interactively when you run `makemigrations`) (edited)
-This default value is very different from declaring `default=<something>` in the model
-That would be written to the DB, and would affect the actual data structure
-By declaring the default in the migration, you can have the strongest requirements possible (in this case: a user type must be selected in all cases) in the DB level
-But if the migration is run on a legacy database, it will first run a query to update the existing NULL values to whatever you provided
-It is a subtle but important distinction
+Therefore before switching branches, you should always revert any migrations that only exist on your current branch.  
+You can revert a migration by running `./manage.py migrate` with a specific pacakge name and the target migration number. In this example:
+```
+./manage.py migrate examples 0001
+```
+
+Then you can switch back to another branch safely.
+
+
+### Setting defaults when adding new fields
+If adding a new field to a model (or changing an existing field) that has no default value and isn't nullable, the `makemigrations` management command will prompt you to either change the model definition and add `default=<value>` or provide a default value for the migration. It might also be tempting to add `null=True` to the model field definition.
+
+It is important to clearly understand the difference between the three approaches.
+
+The first approach is to add `default=<value>` to the field's definition in the model.  
+You should choose this if and only if it makes sense from a data architecture point of view. E.g. it might make sense for a boolean field to default to `True` and be set to `False` if some condition is met.  
+You shouldn't assign a default value if that is not what is expected in the database. E.g. if there is a `name` field, it might make little sense to set a default value.
+
+The second approach is to set `null=True` on the model field definition. This might be tempting to get rid of the migration prompt, however once again, you should think about what data structure is expected.  
+Do you really want the field to sometimes be `NULL` in the database?  
+Unless your answer to that question is a definitive "yes", supperted with a good argument, you shoud not choose this approach.
+
+The third, and usually best approach is to provide a one off default value in the migration (the prompt allows you to do this when running `makemigration`). 
+With this approach your selection for a default value will be recorded in the migration file itself.  
+This makes it possible to apply the new migration to existing (e.g. production) databases, while not makeing any compromises on future data quality.
+
 
 ## Unit testing
 
