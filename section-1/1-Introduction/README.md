@@ -9,6 +9,6 @@ If you identify any errors or possible improvements, leave a pull request or con
 
 > **Note** This document is intended for newcomers at Dangerfarms.
 
-!INCLUDE "section-1/1-Introduction/about_dangerfarms.md"
+!INCLUDE "about_dangerfarms.md"
 
-!INCLUDE "section-1/1-Introduction/organization.md"
+!INCLUDE "organization.md"
