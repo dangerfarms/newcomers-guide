@@ -59,8 +59,14 @@ This makes it possible to apply the new migration to existing (e.g. production) 
 
 ## Unit testing
 
-Coming soon
 
+ - Test names should follow the pattern: `test_should_<action>`. Eventually we will get rid of `test_` which is needed now for the test runner to pick up the functions as tests.
+
+- Minimize the number of joins, avoid overcomplicated serializers, in particular be aware of serializers that nest more than two levels, and especially if they can be searched/filtered on.
+
+- Minimize the number of SQL queries executed.
+
+- When defining a ForeignKey field, think about, and explicitly set the `on_delete` parameter.
 ### Naming conventions
 
 Methods in a class that subclasses `TestCase` are run automatically if and only if their name starts with `test`.
