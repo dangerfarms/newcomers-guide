@@ -20,11 +20,11 @@ TODO: guidelines
 
 ### Directives
 
-**Use directives to encapsulate custom element behaviour.**
+#####Use directives to encapsulate custom element behaviour.
 
 ### Templates
 
-**Avoid putting logic in templates.**
+##### Avoid putting logic in templates.
 
 We should write logic inside the controller instead. 
 
@@ -58,17 +58,17 @@ class MyController {
 
 ### Modules
 
-**Create a new Angular module for every new component, service or directive.**
+##### Create a new Angular module for every new component, service or directive.**
 
 TODO: example
 
-**Avoid polluting root module dependencies.**
+##### Avoid polluting root module dependencies.
 
 Instead, declare dependencies in the module which uses them.
 
 TODO: example
 
-**Export modules from index.js**
+##### Export modules from index.js
 
 This means we can import with a more concise syntax.
 
