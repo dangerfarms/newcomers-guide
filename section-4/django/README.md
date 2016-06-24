@@ -1,7 +1,7 @@
 # Django and Django Rest Framework
 
 ## Tutorials
-Make sure do go through these tutorials first. They explain the basic concepts and help with initial setup as well.
+Make sure to go through these tutorials first. They explain the basic concepts and help with initial setup.
 
 [Official Django Tutorial (v1.9)](https://docs.djangoproject.com/en/1.9/intro/tutorial01/)  
 [Official Django Rest Framework Tutorial](http://www.django-rest-framework.org/tutorial/1-serialization/)
@@ -10,11 +10,11 @@ Make sure do go through these tutorials first. They explain the basic concepts a
 In this section you will find pointers and solutions for common issues. Please read this section carefully and check back for updates.
 
 ### Multiple inheritance (and mixins)
-[Multiple inheritence](https://docs.python.org/2/tutorial/classes.html#multiple-inheritance) can be a bit confusing. What overwrites what?
+[Multiple inheritance](https://docs.python.org/2/tutorial/classes.html#multiple-inheritance) can be a bit confusing. What overwrites what?
 
-Multiple inheritence patterns often repeat throughout the code.
+Multiple inheritance patterns often repeat throughout the code.
 
-For the above to reasons, the best practice is to create a class that is only responsible for combining the classes.
+For the above reasons, the best practice is to create a class that is only responsible for combining the classes.
 
 Example:
 
@@ -42,8 +42,9 @@ class ActualClass(SomethingBehaviourClassWithMixin):
 
 ### Migrations
 Migrations are created automatically by Django when running the `makemigrations` management command. 
+
 Migrations can be applied by running the `migrate` management command.
-Read more about migrations in [the official docs](https://docs.djangoproject.com/en/1.9/topics/migrations/) (v 1.9).
+Read more about migrations in [the official docs](https://docs.djangoproject.com/en/1.9/topics/migrations/) (v1.9).
 
 When you apply a migration, Django generates some SQL queries and executes them on the DB instance.
 
