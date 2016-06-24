@@ -22,6 +22,40 @@ TODO: guidelines
 
 **Use directives to encapsulate custom element behaviour.**
 
+### Templates
+
+**Avoid putting logic in templates.**
+
+We should write logic inside the controller instead. 
+
+* Templates become hard to read if they contain snippets of logic.
+* We can't reuse these snippets unless we copy and paste them around the template.
+* We can't test logic that lives in HTML.
+
+Bad:
+
+```
+/* template.html */
+
+<div ng-show="$ctrl.isValid || $ctrl.state !== $ctrl.STATES.READY">
+```
+
+Good:
+
+```
+/* controller.js */
+class MyController {
+  // ...
+  
+  shouldDisplay() {
+    return this.isValid || this.state !== $ctrl.STATES.READY;
+  }
+}
+
+/* template.html */
+<div ng-show="$ctrl.shouldDisplay()">
+```
+
 ### Modules
 
 **Create a new Angular module for every new component, service or directive.**
