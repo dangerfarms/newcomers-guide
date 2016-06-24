@@ -14,7 +14,6 @@
    * [JavaScript](section-3/javascript/README.md)
    * [Toolchain](section-3/toolchain.md)
    * [Angular 1.x](section-3/angular_1x.md)
-   * [CSS](css.md)
 * [Backend](section-4/README.md)
    * [Django](section-4/django/README.md)
 * [General topics](section-5/general.md)
