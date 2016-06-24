@@ -10,7 +10,7 @@
        * [Git](section-2/1-Tools/git.md)
    * [Workflow](section-2/2-Workflow/README.md)
    * [Commitment and Payment](section-2/commitment_and_payment.md)
-   * [Code quality](section-2/code-quality.md)
+   * [Code quality](section-2/code_quality.md)
 * [Frontend](section-3/README.md)
    * [JavaScript](section-3/javascript/README.md)
    * [Toolchain](section-3/toolchain.md)
