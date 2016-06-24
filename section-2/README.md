@@ -7,9 +7,3 @@ Before you begin work at Danger Farms, you will need to have satisfied the follo
 1. Installed our company software tools
 2. Have read through our list of tutorials/documentation
 3. Understand the development work-flow
-
-!INCLUDE "1-Tools/README.md"
-
-!INCLUDE "2-Workflow/README.md"
-
-!INCLUDE "code_quality.md"

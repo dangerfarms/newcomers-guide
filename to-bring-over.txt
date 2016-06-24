@@ -1,0 +1,56 @@
+Backend
+https://gitlab.com/cycleseven/web-dev-guide/wikis/django
+https://github.com/dangerfarms/process/wiki/Best-Practices#django
+https://github.com/dangerfarms/process/wiki/Newcomer%27s-Guide#django
+https://github.com/dangerfarms/process/wiki/Newcomer%27s-Guide#code-organization
+https://github.com/dangerfarms/process/wiki/Newcomer%27s-Guide#django-rest-framework
+https://github.com/dangerfarms/process/wiki/Newcomer%27s-Guide#4-testing
+https://github.com/dangerfarms/wc-api/commit/244e8aa5011f8a8404cb537ce171f0819ba02be9
+https://github.com/dangerfarms/process/wiki/Error-Message-Troubleshooting
+https://github.com/dangerfarms/process/wiki/Python#code-style
+
+General
+https://gitlab.com/cycleseven/web-dev-guide/wikis/general
+**https://github.com/dangerfarms/process/wiki/Newcomer%27s-Guide#1-operating-system
+**https://github.com/dangerfarms/process/wiki/Newcomer%27s-Guide#ides
+https://github.com/dangerfarms/process/wiki/Newcomer%27s-Guide#git
+https://github.com/dangerfarms/process/wiki/Setup#running-setup-scripts
+https://github.com/dangerfarms/process/wiki/Variable-naming
+https://github.com/dangerfarms/process/wiki/Troubleshooting----Error-Tracing
+https://github.com/dangerfarms/process/wiki/Troubleshooting--Error-Tracing
+
+Tests
+https://github.com/dangerfarms/process/wiki/Mocking
+https://github.com/dangerfarms/process/wiki/Integration-Tests-&-Testing-external-services
+
+Frontend
+https://gitlab.com/cycleseven/web-dev-guide/wikis/html
+https://gitlab.com/cycleseven/web-dev-guide/wikis/promises
+https://gitlab.com/cycleseven/web-dev-guide/wikis/es6
+
+
+JS Style guide:
+https://github.com/dangerfarms/process/wiki/Best-Practices#javascript
+(https://github.com/dangerfarms/process/wiki/Best-Practices#styleguides)
+
+
+Principles page:
+https://github.com/dangerfarms/process/wiki/Newcomer%27s-Guide#philosophies
+
+
+We like these tools:
+https://github.com/dangerfarms/process/wiki/Newcomer%27s-Guide#debugging
+
+
+We like these articles:
+Docker
+https://github.com/dangerfarms/process/wiki/Containerization
+
+https://github.com/dangerfarms/process/wiki/Resources
+
+https://github.com/dangerfarms/process/wiki/CSS
+
+
+
+Project management:
+http://ryanripley.com/agile-software-delivery-with-noestimates/
