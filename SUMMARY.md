@@ -1,19 +1,20 @@
-# Table of Contents
+# Summary
 
 * [Newcomers Guide](README.md)
 * [Introduction](section-1/1-Introduction/README.md)
-   * [About Dangerfarms](/section-1/1-Introduction/about-dangerfarms.md)
-   * [Organization](/section-1/1-Introduction/organization.md)
+   * [About Dangerfarms](section-1/1-Introduction/about-dangerfarms.md)
+   * [Organization](section-1/1-Introduction/organization.md)
+* [Frontend](section-3/README.md)
+   * [JavaScript](section-3/javascript/README.md)
+   * [Toolchain](section-3/toolchain.md)
+   * [Angular 1.x](section-3/angular_1x.md)
 * [Before you start working with us](section-2/README.md)
    * [Tools](section-2/1-Tools/README.md)
        * [Docker](section-2/1-Tools/docker.md)
        * [Git](section-2/1-Tools/git.md)
    * [Workflow](section-2/2-Workflow/README.md)
    * [Code quality](section-2/code_quality.md)
-* [Frontend](section-3/README.md)
-   * [JavaScript](section-3/javascript/README.md)
-   * [Toolchain](section-3/toolchain.md)
-   * [Angular 1.x](section-3/angular_1x.md)
 * [Backend](section-4/README.md)
    * [Django](section-4/django/README.md)
 * [Testing](section-5/README.md)
+
