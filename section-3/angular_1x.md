@@ -37,6 +37,7 @@ But actually, there are many benefits to creating a component:
 * If we want to change the CSS class, we only need to change it in one place.
 * We might extend the header functionality later. Maybe we will want anchor links to be generated for all dashboard subheaders. This will be easier if we only have to make the change in one place.
 * We don't have to remember which tag types go with which CSS classes.
+* It makes our templates more readable, and less... div-y.
 
 In short: creating HTML templates now feels like software engineering instead of a copy and paste exercise!
 
