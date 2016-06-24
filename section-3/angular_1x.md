@@ -16,11 +16,33 @@ TODO: add some best practices
 
 Designing good components can be deceptively tricky. These guidelines outline what has been working well for us. They are subject to change, but we hope they will be helpful!
 
-TODO: guidelines
+##### Create components for purely presentational elements.
+
+It might seem like this HTML snippet doesn't warrant its own component:
+
+```
+<h3 class="DashboardSubheader">
+    My header
+</h3>
+```
+
+But actually, there are many benefits to creating a component:
+
+```
+<dashboard-subheader>
+    My header
+</dashboard-subheader>
+```
+
+* If we want to change the CSS class, we only need to change it in one place.
+* We might extend the header functionality later. Maybe we will want anchor links to be generated for all dashboard subheaders. This will be easier if we only have to make the change in one place.
+* We don't have to remember which tag types go with which CSS classes.
+
+In short: creating HTML templates now feels like software engineering instead of a copy and paste exercise!
 
 ### Directives
 
-#####Use directives to encapsulate custom element behaviour.
+##### Use directives to encapsulate custom element behaviour.
 
 ### Templates
 
@@ -58,7 +80,7 @@ class MyController {
 
 ### Modules
 
-##### Create a new Angular module for every new component, service or directive.**
+##### Create a new Angular module for every new component, service or directive.
 
 TODO: example
 
@@ -68,7 +90,7 @@ Instead, declare dependencies in the module which uses them.
 
 TODO: example
 
-##### Export modules from index.js
+##### Export modules from `index.js`.
 
 This means we can import with a more concise syntax.
 
