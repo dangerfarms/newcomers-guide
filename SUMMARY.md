@@ -14,7 +14,7 @@
    * [JavaScript](section-3/javascript/README.md)
    * [Toolchain](section-3/toolchain.md)
    * [Angular 1.x](section-3/angular_1x.md)
-   * Links and Articles
+   * [Links and Articles](section-3/links_and_articles.md)
 * [Backend](section-4/README.md)
    * [Django](section-4/django/README.md)
    * [Links and Articles](section-4/links_and_articles.md)
