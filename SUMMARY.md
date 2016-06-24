@@ -17,5 +17,5 @@
 * [Backend](section-4/README.md)
    * [Django](section-4/django/README.md)
 * [General topics](section-5/general.md)
-   * [Testing](section-5/README.md)
+   * [Testing](section-5/tests.md)
 
