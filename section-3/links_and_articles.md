@@ -33,6 +33,10 @@ Useful pattern if you want to componentize a layout. Or any situation where you 
 
 http://www.codelord.net/2016/03/04/using-angular-1-dot-5-s-multiple-transclusion-slots/
 
+##### How to create giant memory leaks in Angular
+
+https://makandracards.com/makandra/31289-how-to-create-giant-memory-leaks-in-angularjs
+
 ## React
 
 ##### Full-stack Redux tutorial
