@@ -16,5 +16,6 @@
    * [Angular 1.x](section-3/angular_1x.md)
 * [Backend](section-4/README.md)
    * [Django](section-4/django/README.md)
-* [Testing](section-5/README.md)
+* [General topics](section-5/general.md)
+   * [Testing](section-5/README.md)
 
