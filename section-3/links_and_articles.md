@@ -27,6 +27,12 @@ Note that an alternative pattern is to use services.
 
 https://toddmotto.com/on-init-require-object-syntax-angular-component/#using-require-as-an-object
 
+##### Multiple transclusion slots
+
+Useful pattern if you want to componentize a layout. Or any situation where you need to transclude more than one template!
+
+http://www.codelord.net/2016/03/04/using-angular-1-dot-5-s-multiple-transclusion-slots/
+
 ## React
 
 ##### Full-stack Redux tutorial
@@ -40,3 +46,11 @@ http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html
 Disclaimer: we haven't tried this pattern out. But it looks like it will be useful!
 
 http://natpryce.com/articles/000814.html
+
+## Fun
+
+##### A single div
+
+Every image on this website is a div styled by pure CSS.
+
+http://a.singlediv.com/
