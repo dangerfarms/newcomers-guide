@@ -2,6 +2,7 @@
 
 * [Newcomers Guide](README.md)
    * General
+   * General
 * [Introduction](section-1/1-Introduction/README.md)
    * [About Dangerfarms](section-1/1-Introduction/about-dangerfarms.md)
    * [Organization](section-1/1-Introduction/organization.md)
