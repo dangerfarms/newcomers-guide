@@ -123,6 +123,14 @@ def test_should_not_set_completed_if_required_fields_are_blank(self):
     # since we are testing client profiles only in this test case.
 ```
 
+### Best Practices
+
+##### Use `django.test.TestCase` instead of `unittest.TestCase`
+
+Django's `TestCase` class is based on the one in the `unittest` package, but it also clears the DB between each test.
+
+If we don't clear the DB between tests, tests might fail depending on which tests were ran before it. Therefore any test class which uses the database **must** extend `django.test.TestCase`.
+
 ### Troubleshooting
 
 #### `ImportError` when running tests.
