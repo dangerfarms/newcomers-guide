@@ -8,10 +8,15 @@ Make sure to go through these tutorials first. They explain the basic concepts a
 
 ## Best Practices
 
-##### Never directly import `User`
+##### Never directly import `User`.
 
 Use `django.contrib.auth.get_user_model()` instead. We use custom User models. Using this method ensures that all our code points the correct model.
 
+##### Use DRF's `status` module.
+
+Instead of hardcoding status codes like `401`, use eg. `rest_framework.status.HTTP_401_UNAUTHORIZED` instead. This makes code more readable and reduces the chance of typos. 
+
+Hardcoded constant strings are generally a bad idea in programming. You should try to assign constant strings to variables, then reference that variable instead. This is more DRY.
 
 ## Common issues
 In this section you will find pointers and solutions for common issues. Please read this section carefully and check back for updates.
