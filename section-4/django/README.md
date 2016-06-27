@@ -8,7 +8,7 @@ Make sure to go through these tutorials first. They explain the basic concepts a
 
 ## Best Practices
 
-##### Never directly import `User`.
+##### Never directly import `User`
 
 Use `django.contrib.auth.get_user_model()` instead. We use custom User models. Using this method ensures that all our code points the correct model.
 
