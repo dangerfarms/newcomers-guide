@@ -22,12 +22,7 @@ Compose is a tool for defining and running multi-container Docker applications. 
 Please follow the installation instructions on the link above.
 
 ## Mac
-
-[Docker Toolbox](https://www.docker.com/products/docker-toolbox) will get you up and running with everything you need (including `docker-compose`). By using Docker Toolbox, you will be running Docker inside a VM (`docker-machine`). This works well, but it can be slow. 
-
-A better option is [Docker for Mac](https://beta.docker.com/). However, this is still in private beta, and has some minor issues. If you can get a copy, it is much faster and simpler. 
-
-When Docker for Mac is no longer invite-only, we will **always** recommend it over Docker Toolbox.
+The recommended tool for using Docker on a Mac is the aptly named [Docker for Mac](https://docs.docker.com/docker-for-mac/). However, this is still in beta and may contain bugs. If you have any issues, search online and if you can't find anything then please post to one of the groups.
 
 ##Practice
 Please take some time now and look through the docs for `docker` and `docker-compose` to familiarize yourself with these tools.
