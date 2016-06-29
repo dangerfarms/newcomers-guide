@@ -4,6 +4,8 @@ Most of our projects are hosted on github.com, so you will need to [create a fre
 
 Once you have your github username, please let us know so we can add you to our projects as a collaborator.
 
+If you are new to git, please read this tutorial: https://www.atlassian.com/git/.
+
 ##SSH keys
 Set up SSH keys on your account, so that you don't have to enter your username and password every time you connect to the github repo. You can follow the guide on the following link: https://help.github.com/articles/generating-ssh-keys/.
 
