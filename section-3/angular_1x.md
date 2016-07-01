@@ -75,8 +75,6 @@ class MyController {
 
 In Angular, a factory or service is usually your best bet for reusing code.
 
-##### Avoid adding JS expressions to templates.
-
 
 # Component design.
 
