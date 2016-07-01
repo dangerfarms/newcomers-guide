@@ -177,13 +177,13 @@ Good:
 class MyController {
   // ...
   
-  shouldDisplay() {
+  isDisplayed() {
     return this.isValid || this.state !== $ctrl.STATES.READY;
   }
 }
 
 /* template.html */
-<div ng-show="$ctrl.shouldDisplay()">
+<div ng-show="$ctrl.isDisplayed()">
 ```
 
 ### Modules
