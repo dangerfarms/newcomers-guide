@@ -10,15 +10,7 @@ These best practices assume we're using Angular 1.5 or above. And they will make
 
 ## Best Practices
 
-##### Export Angular modules from `index.js`.
-
-TODO: example
-
 ##### Use strict DI.
-
-##### Always declare all module dependencies.
-
-For testing.
 
 ##### Give NAMEs to things.
 
