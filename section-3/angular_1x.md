@@ -10,34 +10,6 @@ These best practices assume we're using Angular 1.5 or above. And they will make
 
 ## Best Practices
 
-##### Use strict DI.
-
-##### Give NAMEs to things.
-
-Reason 1: minification.
-Reason 2: globals.
-
-##### Use ngInject.
-
-Use it where functions or classes are declared. Then you don’t have to manually annotate using `$inject`.
- 
- ```
-/*@ngInject*/
-function MyDirective($timeout) {
-  ...
-}
-```
-
-```
-/*@ngInject*/
-class MyController {
-  constructor($state, Restangular, DfService) {
-    this.$state = $state;
-    …
-  }
-}
-```
-
 ##### Avoid inheritance.
 
 1. It doesn’t play nicely with dependency injection. 
@@ -195,6 +167,36 @@ TODO: example
 This means we can import with a more concise syntax.
 
 TODO: example
+
+### Dependency Injection
+
+##### Use strict DI.
+
+##### Give NAMEs to things.
+
+Reason 1: minification.
+Reason 2: globals.
+
+##### Use ngInject.
+
+Use it where functions or classes are declared. Then you don’t have to manually annotate using `$inject`.
+ 
+ ```
+/*@ngInject*/
+function MyDirective($timeout) {
+  ...
+}
+```
+
+```
+/*@ngInject*/
+class MyController {
+  constructor($state, Restangular, DfService) {
+    this.$state = $state;
+    …
+  }
+}
+```
 
 ## Code Style
 
