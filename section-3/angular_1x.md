@@ -167,7 +167,7 @@ class MyController {
 }
 ```
 
-### General
+### General advice
 
 ##### Avoid inheritance.
 
