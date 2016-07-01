@@ -171,7 +171,7 @@ class MyController {
 
 ##### Avoid inheritance.
 
-1. Inhertiance doesn’t play nicely with dependency injection. 
+1. Inheritance doesn’t play nicely with dependency injection. 
 
    Child classes need to inject all the same things as their parents, and then they need to pass the dependencies up via super.
    
