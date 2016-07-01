@@ -76,8 +76,35 @@ class MyController {
 
 In Angular, a factory or service is usually your best bet for reusing code.
 
+### Components
 
-# Component design.
+Designing good components can be deceptively tricky. These guidelines outline what has been working well for us. They are subject to change, but we hope they will be helpful!
+
+##### Create components for purely presentational elements.
+
+It might seem like this HTML snippet doesn't warrant its own component:
+
+```
+<h3 class="DashboardSubheader">
+    My header
+</h3>
+```
+
+But actually, there are many benefits to creating a component:
+
+```
+<dashboard-subheader>
+    My header
+</dashboard-subheader>
+```
+
+* If we want to change the CSS class, we only need to change it in one place.
+* We might extend the header functionality later. Maybe we will want anchor links to be generated for all dashboard subheaders. This will be easier if we only have to make the change in one place.
+* We don't have to remember which tag types go with which CSS classes.
+* It makes our templates more readable, and less... div-y.
+
+In short: creating HTML templates now feels like software engineering instead of a copy and paste exercise!
+
 
 ##### Don't set `controllerAs` in components.
 
@@ -113,35 +140,6 @@ But no further!
 
 Events and callbacks must bubble up and down the component tree by their nature.
 
-
-### Components
-
-Designing good components can be deceptively tricky. These guidelines outline what has been working well for us. They are subject to change, but we hope they will be helpful!
-
-##### Create components for purely presentational elements.
-
-It might seem like this HTML snippet doesn't warrant its own component:
-
-```
-<h3 class="DashboardSubheader">
-    My header
-</h3>
-```
-
-But actually, there are many benefits to creating a component:
-
-```
-<dashboard-subheader>
-    My header
-</dashboard-subheader>
-```
-
-* If we want to change the CSS class, we only need to change it in one place.
-* We might extend the header functionality later. Maybe we will want anchor links to be generated for all dashboard subheaders. This will be easier if we only have to make the change in one place.
-* We don't have to remember which tag types go with which CSS classes.
-* It makes our templates more readable, and less... div-y.
-
-In short: creating HTML templates now feels like software engineering instead of a copy and paste exercise!
 
 ### Directives
 
