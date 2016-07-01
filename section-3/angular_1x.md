@@ -10,7 +10,110 @@ These best practices assume we're using Angular 1.5 or above. And they will make
 
 ## Best Practices
 
-TODO: add some best practices
+##### Export Angular modules from `index.js`.
+
+TODO: example
+
+##### Use strict DI.
+
+##### Always declare all module dependencies.
+
+For testing.
+
+##### Give NAMEs to things.
+
+Reason 1: minification.
+Reason 2: globals.
+
+Use ngInject.
+ Use it where functions or classes are declared. Then you don’t have to manually annotate
+ 
+ ```
+/*@ngInject*/
+function MyDirective($timeout) {
+  ...
+}
+```
+
+```
+/*@ngInject*/
+class MyController {
+  constructor($state, Restangular, DfService) {
+    this.$state = $state;
+    …
+  }
+}
+```
+
+##### Avoid inheritance.
+
+1. It doesn’t play nicely with dependency injection. 
+
+   Child classes need to inject all the same things as their parents, and then they need to pass the dependencies up via super.
+   
+   ```
+   class ParentController {
+     constructor($log) {
+       this.$log = $log;
+     }
+   }
+   
+   class ChildController {
+     constructor($log, $scope) {
+       super($log);
+
+       this.$scope = $scope;
+     }
+   }
+   ```
+   
+    This isn’t DRY, and results in tight coupling between the constructors.
+
+2. Inheritance in JavaScript can behave in unexpected ways, due to JavaScript’s use of prototypes instead of real classes.
+
+3. Even in programming languages where inheritance is well-behaved, composition is often encouraged as a safer method of code reuse.
+
+In Angular, a factory or service is usually your best bet for reusing code.
+
+##### Avoid adding JS expressions to templates.
+
+
+# Component design.
+
+##### Don't set `controllerAs` in components.
+
+Use the default name, which is `$ctrl`. **TODO: link to Angular docs**
+
+We don't have to worry about controllers having the same name, because of isolated scopes. Using the default name reduces boilerplate and encourages consistency.
+
+##### Use `require` for parent-child co-ordination.
+
+You only want to use this pattern when the child component wouldn’t make sense on its own.
+
+Use the `$onInit` component lifecycle hook to access the controllers that you request using `require`.
+
+**TODO: example.**
+
+##### Use services for other component co-ordination.
+
+Sometimes we want to co-ordinate components that aren't visually grouped together. In this case, a parent component is not the correct solution for communicating between components. Instead use a service.
+
+Pros:
+
+Cons:
+
+* Services are singletons. This means your state is available globally in the app. It's generally preferable to isolate state to the components that need it. See **TODO: link to "Data + state should live as far down the component tree as it can."**
+
+**TODO: example.**
+
+##### Data + state should live as far down the component tree as it can.
+
+But no further!
+
+##### Consider using a service instead of passing data through 
+
+Events and callbacks must bubble up and down the component tree by their nature.
+
 
 ### Components
 
