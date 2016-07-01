@@ -10,36 +10,6 @@ These best practices assume we're using Angular 1.5 or above. And they will make
 
 ## Best Practices
 
-##### Avoid inheritance.
-
-1. It doesn’t play nicely with dependency injection. 
-
-   Child classes need to inject all the same things as their parents, and then they need to pass the dependencies up via super.
-   
-   ```
-   class ParentController {
-     constructor($log) {
-       this.$log = $log;
-     }
-   }
-   
-   class ChildController {
-     constructor($log, $scope) {
-       super($log);
-
-       this.$scope = $scope;
-     }
-   }
-   ```
-   
-    This isn’t DRY, and results in tight coupling between the constructors.
-
-2. Inheritance in JavaScript can behave in unexpected ways, due to JavaScript’s use of prototypes instead of real classes.
-
-3. Even in programming languages where inheritance is well-behaved, composition is often encouraged as a safer method of code reuse.
-
-In Angular, a factory or service is usually your best bet for reusing code.
-
 ### Components
 
 Designing good components can be deceptively tricky. These guidelines outline what has been working well for us. They are subject to change, but we hope they will be helpful!
@@ -110,7 +80,6 @@ If some data or state is only relevant for a particular component (or group), cr
 ##### Consider using a service instead of passing data through 
 
 Events and callbacks must bubble up and down the component tree by their nature.
-
 
 ### Directives
 
@@ -197,6 +166,38 @@ class MyController {
   }
 }
 ```
+
+### General
+
+##### Avoid inheritance.
+
+1. Inhertiance doesn’t play nicely with dependency injection. 
+
+   Child classes need to inject all the same things as their parents, and then they need to pass the dependencies up via super.
+   
+   ```
+   class ParentController {
+     constructor($log) {
+       this.$log = $log;
+     }
+   }
+   
+   class ChildController {
+     constructor($log, $scope) {
+       super($log);
+
+       this.$scope = $scope;
+     }
+   }
+   ```
+   
+    This isn’t DRY, and results in tight coupling between the constructors.
+
+2. Inheritance in JavaScript can behave in unexpected ways, due to JavaScript’s use of prototypes instead of real classes.
+
+3. Even in programming languages where inheritance is well-behaved, composition is often encouraged as a safer method of code reuse.
+
+In Angular, a factory or service is usually your best bet for reusing code.
 
 ## Code Style
 
