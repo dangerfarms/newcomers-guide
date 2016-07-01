@@ -8,6 +8,8 @@ We are using ES6.
 More coming soon.
 
 ## ES6
+
+https://www.sitepoint.com/self-documenting-javascript/
 https://babeljs.io/docs/learn-es2015/  
 http://ilikekillnerds.com/2015/02/a-guide-to-es6-classes/  
 
