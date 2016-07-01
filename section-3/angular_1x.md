@@ -105,14 +105,13 @@ But actually, there are many benefits to creating a component:
 
 In short: creating HTML templates now feels like software engineering instead of a copy and paste exercise!
 
-
 ##### Don't set `controllerAs` in components.
 
 Use the default name, which is `$ctrl`. **TODO: link to Angular docs**
 
 We don't have to worry about controllers having the same name, because of isolated scopes. Using the default name reduces boilerplate and encourages consistency.
 
-##### Use `require` for parent-child co-ordination.
+##### Use `require` for parent-child co-ordination?
 
 You only want to use this pattern when the child component wouldn’t make sense on its own.
 
@@ -132,9 +131,17 @@ Cons:
 
 **TODO: example.**
 
-##### Data + state should live as far down the component tree as it can.
+##### Make use of container components.
 
-But no further!
+It's easy to do all your data fetching on the view. Likewise, it's a common pattern to add a lot of callbacks and logic for your components in a view-controller.
+
+This gets messy.
+
+If some data or state is only relevant for a particular component (or group), create a container component, and move the controller code there.
+
+**TODO: example**
+
+**TODO: link**
 
 ##### Consider using a service instead of passing data through 
 
