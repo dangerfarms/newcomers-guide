@@ -25,8 +25,9 @@ For testing.
 Reason 1: minification.
 Reason 2: globals.
 
-Use ngInject.
- Use it where functions or classes are declared. Then you don’t have to manually annotate
+##### Use ngInject.
+
+Use it where functions or classes are declared. Then you don’t have to manually annotate using `$inject`.
  
  ```
 /*@ngInject*/
