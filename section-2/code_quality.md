@@ -43,6 +43,39 @@ $log.error(`[${Component.NAME}] error message`);
 
 ## Python specific rules
 
-Coming soon.
+### Line breaks
+Lists and objects should always be in multiple lines as follows:
+
+```python
+# Lists:
+
+# Good:
+a_list = [
+    'aplphabetically',
+    'ordered',
+    'values',
+]
+# Note: Order values alphabetically unless order of items matters.
+
+# Bad:
+a_list = ['aplphabetically',
+          'ordered',
+          'values',]
+
+# Dictionaries
+# Good:
+a_dict = {
+    'a_key: 'value1',
+    'complex_key': {
+        'nested_key': 'value',
+    },
+}
+# Note: Order keys alphabetically unless order of items matters.
+
+# Bad:
+a_dict = {'a_key: 'value1',
+          'complex_key': {'nested_key': 'value',},
+         }
+```
 
 ## CSS / Sass / Scss specific rules
