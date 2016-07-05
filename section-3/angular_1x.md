@@ -81,6 +81,26 @@ If some data or state is only relevant for a particular component (or group), cr
 
 Events and callbacks must bubble up and down the component tree by their nature.
 
+##### Use the object style when using `require`.
+
+```
+`require`: {
+  ngModelController: 'ngModel',
+  myParentDirectiveController: '^^myParentDirective'
+}
+
+...
+
+class MyComponentController {
+  $onInit() {
+    this.ngModelController.foo();
+    this.myParentDirectiveController.bar();
+  }
+}
+```
+
+This is better than using an array for `require`. The required controllers are available in your component's controller under obvious names.
+
 ### Directives
 
 ##### Use directives to encapsulate custom element behaviour.
