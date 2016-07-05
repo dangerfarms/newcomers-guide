@@ -24,6 +24,19 @@ Please follow the installation instructions on the link above.
 ## Mac
 The recommended tool for using Docker on a Mac is the aptly named [Docker for Mac](https://docs.docker.com/docker-for-mac/). However, this is still in beta and may contain bugs. If you have any issues, search online and if you can't find anything then please post to one of the groups.
 
+### Common Issues with Docker for Mac
+
+**docker for mac goes into infinite `starting...` state**
+If this happens, first use the diagnosis tool provided to check for issues. If however everything looks OK then you may have a stale data folder. If so follow these steps:
+
+1. Stop/Quit Docker for Mac
+2. Uninstall Docker.app from /Applications
+3. Run this uninstall script to clean any other lingering docker apps https://raw.githubusercontent.com/docker/toolbox/master/osx/uninstall.sh
+4. Run `rm -rf ~/Library/Containers/com.docker.*` to remove the data folder
+5. Install as per the Docker for Mac guide.
+
+
+
 ##Practice
 Please take some time now and look through the docs for `docker` and `docker-compose` to familiarize yourself with these tools.
 
