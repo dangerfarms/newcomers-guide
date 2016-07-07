@@ -32,6 +32,16 @@ Your IDE should have a plugin for organising highlighted blocks of code.
 
 For WebStorm / PyCharm the [Line sorter](https://plugins.jetbrains.com/plugin/?idea&id=4055) plugin does the job.
 
+##### Use all caps for constants.
+
+```
+// ES6
+const MY_CONST = 'const';
+
+// Python
+MY_CONST = 'const';
+```
+
 ## Javascript / ES6 specific rules
 
 ### Error messages must include the name of the component
