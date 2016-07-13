@@ -20,5 +20,5 @@
    * [Links and Articles](section-4/links_and_articles.md)
 * [General topics](section-5/general.md)
    * [Testing](section-5/tests.md)
-   * Coming soon
+   * [Coming soon](section-5/coming_soon.md)
 
