@@ -37,14 +37,5 @@ https://github.com/dangerfarms/process/wiki/Resources
 https://github.com/dangerfarms/process/wiki/CSS
 
 
-More info to come soon on:
-MVC
-Model(data)/View/Controller layer
-Relational DBs
-Key Value Store (Caches)
-Security
-Performance
-
-
 Project management:
 http://ryanripley.com/agile-software-delivery-with-noestimates/
