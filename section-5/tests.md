@@ -15,10 +15,10 @@ With all that in mind, a good test should be:
 
 ### Readable Tests
 
-Tests not only provide the programmer with a degree of certainty that their code works, but also serve as documentation. The ideal mindset to have when you are writing tests is to imagine that you are looking at the project's code for the first time: youu would want each test to tell a story.
+Tests not only provide the programmer with a degree of certainty that their code works, but also serve as documentation. The ideal mindset when writing tests is to imagine that you are looking at the project's code for the first time, you would want each test to tell a story.
 
 ```python
-def test_should_disable_logged_in_user(self):
+def test_should_disable_logged_in_user_if_active(self):
     """Test API sets User.disabled = True. Refetch from database to prove."""
     user = self.create_user()
     self.login(user)
@@ -28,13 +28,18 @@ def test_should_disable_logged_in_user(self):
 ```
 
 The above test is very easy to follow:
-- each line has descriptive variable/method names
-- more complex behaviour is abstracted away to methods.
+- The method name states what it is testing
+- Every variable has a descriptive name
+- More complex behaviour is abstracted away to methods
+
+Test method names should describe an expected result from the **system under test** given a particular state, i.e. `should_do_something_if/when_something_else`. Note: the above test prepends test_ to tell the test runner that it is a test to be executed and should be ignored when reading test names.
 
 The rule of writing descriptive names should not just apply to test code, but to the entire project. Having a variable named `a` in any file is not helpful for someone not familiar with the codebase. In fact, you should always strive for the most readable code, and it is arguably most important in tests.
 
-Due to the importance of readability, tests are the only place in code where we feel [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)ness is not necessarily always the right approach.  
+Due to the importance of readability, tests are the only place in code where we feel [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)ness is not always the right approach.  
+
 However if extracting common behaviour can be done in a way to let a test story flow, then it is preferred to do so. For example in the line `self.login(user)` from above a common behaviour (logging a user in) has been abstracted away to a base class containing similar helper functions.  
+
 This is a win-win: it makes the test more readable and more DRY at the same time. (The line was originally `self.client.login(username=user.username, password=USER_PASSWORD)`.)
 
 To summarize: if you can make a test both more readable and DRYer then 100% do so, otherwise aim for readability.
