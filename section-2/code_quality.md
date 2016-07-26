@@ -81,7 +81,7 @@ a_dict = {
         'nested_key': 'value',
     },
 }
-# Not: Order keys alphabetically unless order of items matters.
+# Note: Order keys alphabetically unless order of items matters.
 
 # Bad:
 a_dict = {'a_key: 'value1',
