@@ -54,6 +54,7 @@ $log.error(`[${Component.NAME}] error message`);
 ## Python specific rules
 
 ### Line breaks
+
 Lists and objects should always be in multiple lines as follows:
 
 ```python
@@ -80,12 +81,43 @@ a_dict = {
         'nested_key': 'value',
     },
 }
-# Note: Order keys alphabetically unless order of items matters.
+# Not: Order keys alphabetically unless order of items matters.
 
 # Bad:
 a_dict = {'a_key: 'value1',
           'complex_key': {'nested_key': 'value',},
          }
+```
+
+This is easier to maintain when variable names change, because the indentation doesn't depend on the position of the opening brace.
+
+Apply similar logic when you break function calls across multiple lines. This can be especially beneficial if the function has a long name.
+
+```
+# Bad
+mock_send_profile_completion_email.delay.assert_called_with('profile-complete',
+                                                            ['john@wintercircle.co'],
+                                                            merge_data={
+                                                                'john@wintercircle.co': {
+                                                                    'name': 'John',
+                                                                    'link':
+                                                                    'http://localhost:8200/#/members/profile'
+                                                                }                                                                  
+                                                            },
+                                                            tags=['member-profile-complete'])
+
+# Good
+mock_send_profile_completion_email.delay.assert_called_with(
+    'profile-complete',
+    ['john@wintercircle.co'],
+    merge_data={
+        'john@wintercircle.co': {
+            'name': 'John',
+            'link': 'http://localhost:8200/#/members/profile'
+        }
+    },
+    tags=['member-profile-complete']
+)
 ```
 
 ## CSS / Sass / Scss specific rules
