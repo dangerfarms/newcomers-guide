@@ -42,6 +42,16 @@ const MY_CONST = 'const';
 MY_CONST = 'const';
 ```
 
+##### Use single quotes whenever possible.
+
+```
+# Bad
+my_variable = "hiya"
+
+# Good
+my_variable = 'hiya'
+```
+
 ## Javascript / ES6 specific rules
 
 ### Error messages must include the name of the component
