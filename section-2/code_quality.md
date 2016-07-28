@@ -1,15 +1,9 @@
 # Code Quality
 
-## Linting
-
-We use ESLint (ES6) and Flake 8 (Python) to run code quality checks on the code before committing.
-Please inspect the output of the scripts and fix any errors and warnings before committing.
-
-Please read the `.eslint.yml` and `.flake8` files and understand rules. If you have any questions or suggestions, let us know.
-
-In your IDE you should set up linting so that you can make use of static analysis (i.e. error highlighting while typing), according to the rules that are specified for the project.
-
 ## General rules
+
+### Never commit code that has not been run
+Whether it is automated tests (preferably) or manual execution, each line of code must be executed at least once before it is committed.
 
 ### Never commit commented out code.
 We have a code repository for a reason: we can go back to older versions.
@@ -51,6 +45,15 @@ my_variable = "hiya"
 # Good
 my_variable = 'hiya'
 ```
+
+## Linting
+
+We use ESLint (ES6) and Flake 8 (Python) to run code quality checks on the code before committing.
+Please inspect the output of the scripts and fix any errors and warnings before committing.
+
+Please read the `.eslint.yml` and `.flake8` files and understand rules. If you have any questions or suggestions, let us know.
+
+In your IDE you should set up linting so that you can make use of static analysis (i.e. error highlighting while typing), according to the rules that are specified for the project.
 
 ## Javascript / ES6 specific rules
 
