@@ -95,7 +95,7 @@ Tests should be fast for obvious reasons - nobody wants to wait around for an ho
 
 There are a couple of things you can do to ensure they can be as fast as possible.
 
-**Don't create more test data than you need to**
+##### Don't create more test data than you need to
 
 To prove correctness for your specific test, how many objects do you really need to create? 
 
@@ -105,7 +105,19 @@ Adding more data than necessary to prove a specific case is pointless and slows 
 
 (This ties into the much broader point that you should be able to reason about every line of code to write. More on that another time.)
 
-**Mock out "slow" interfaces**
+##### Creating data in `setUp`
+
+Creating data in `setUp` methods is a common way to fall into the trap of creating more data than you need.
+
+Imagine your `setUp` method creates 5 objects, and 4 of your tests don't actually use the data. This means 20 pointless DB writes happen every time we run the test suite. This can add up, and has a bad impact on speed that can be difficult to spot.
+
+It's usually better to explicitly set up the data needed in each test, even if this contradicts DRY. It will make the tests more readable anyway, and makes you think harder about how to keep them lean.
+
+If you truly do have the exact same set of objects created for many tests, move the repeated code to a method, and call it explicitly in each test (**not** in `setUp`).
+
+If you truly need all of the data for every test in a class, then of course it is fine to create it in `setUp`.
+
+##### Mock out "slow" interfaces
 
 In unit testing, slow running parts of a system tend to involve network requests such as external API calls or file transfers. Not only are these slow, but they can be non-deterministic, if for instance, an external service is down. Unit testing is about testing **your** code, and for many reasons, mocking should almost always be done for any kind of stream handling or external service.
 
