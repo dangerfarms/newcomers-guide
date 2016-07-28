@@ -213,3 +213,17 @@ def test_should_showcase_a_good_way_to_test(self):
 ```
 
 As said previously, creating many small, specific tests is a great way to focus effort and produce tests that are effective. Test Driven Development also helps by thinking about one test at a time.
+
+### Common Pitfalls
+
+##### Execute failing tests before writing the code
+
+The recommended way to write tests is like this.
+
+1. Write a test that exposes the missing functionality.
+2. Run the tests and verify your new test fails.
+3. Write the code to make the test pass.
+
+Step 2 is easy to overlook and seems pointless. It can actually help a lot. 
+
+Sometimes, a typo means your test isn't picked up by the runner. Or it doesn't test the thing you expected it to because of an incorrect assertion. These errors can be picked up by running the test and watching it fail before writing new code!
