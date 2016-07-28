@@ -113,7 +113,35 @@ This makes it possible to apply the new migration to existing (e.g. production) 
 Coming soon.
 
 #### Classes (Test cases)
-Coming soon.
+
+##### Use DRF's verbs to name tests
+
+Django Rest Framework uses some useful verbs to name [mixins and generic views](http://www.django-rest-framework.org/api-guide/generic-views/#mixins).
+
+* List
+* Create
+* Retrieve
+* Update
+* Destroy
+
+Try to use these words in your test class names.
+
+Use "list" when you `GET` a collection.
+
+Use "retrieve" when `GET` a single entry in the collection.
+
+For example, if you have a `/users` view you might write these test classes.
+
+* `ListUsersTestCase` (`GET /users`)
+* `CreateUserTestCase` (`POST /users`)
+
+For `/users/:id` (ie. a detail view), you'd probably write these.
+
+* `RetrieveUserTestCase` (`GET /users/12`)
+* `UpdateUserTestCase` (`PUT/PATCH /users/12`)
+* `DestroyUserTestCase` (`DELETE /users/12`)
+
+
 
 #### Methods (Unit tests)
 
