@@ -126,9 +126,7 @@ Django Rest Framework uses some useful verbs to name [mixins and generic views](
 
 Try to use these words in your test class names.
 
-Use "list" when you `GET` a collection.
-
-Use "retrieve" when `GET` a single entry in the collection.
+Use "list" when you `GET` a collection. Use "retrieve" when `GET` a single entry in the collection.
 
 For example, if you have a `/users` view you might write these test classes.
 
