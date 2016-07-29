@@ -18,6 +18,7 @@
 * [Backend](section-4/README.md)
    * [Django](section-4/django/README.md)
    * [Links and Articles](section-4/links_and_articles.md)
+   * REST APIs
 * [General topics](section-5/general.md)
    * [Testing](section-5/tests.md)
    * [Coming soon](section-5/coming_soon.md)
