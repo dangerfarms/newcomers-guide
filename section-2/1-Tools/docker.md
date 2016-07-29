@@ -22,7 +22,8 @@ Compose is a tool for defining and running multi-container Docker applications. 
 Please follow the installation instructions on the link above.
 
 ## Mac
-The recommended tool for using Docker on a Mac is the aptly named [Docker for Mac](https://docs.docker.com/docker-for-mac/). However, this is still in beta and may contain bugs. If you have any issues, search online and if you can't find anything then please post to one of the groups.
+
+Use [Docker for Mac](https://docs.docker.com/docker-for-mac/) :)
 
 ### Common Issues with Docker for Mac
 
