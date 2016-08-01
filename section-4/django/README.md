@@ -18,6 +18,12 @@ Instead of hardcoding status codes like `401`, use eg. `rest_framework.status.HT
 
 Hardcoded constant strings are generally a bad idea in programming. You should try to assign constant strings to variables, then reference that variable instead. This is more DRY.
 
+## Examples
+
+Here is some idiomatic backend code, using Django and Django Rest Framework to implement a `GET` endpoint for a single Profile object.
+
+https://github.com/dangerfarms/cc-api/commit/059c328b259b0fbfe970feff7535cfb2b77d42b4
+
 ## Common issues
 In this section you will find pointers and solutions for common issues. Please read this section carefully and check back for updates.
 
