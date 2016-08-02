@@ -53,6 +53,16 @@ Please follow these steps when you are facing a problem.
 
 > **Note** **The last thing we want is to discourage you from asking questions**. However the gluers need to get on with our own development tasks, too.
 
+#### Asking for help
+
+When you are asking about an error, always include:
+
+1) The task and the project you are working on.
+2) The command you were running. If it is a failing test, then the test code.
+3) The exact output causing the headache.
+
+This saves time for everyone.
+
 ### Commit message syntax
 Your commit messages should be in the imperative form (as if you are telling git what to do) and be capitalised.
 
