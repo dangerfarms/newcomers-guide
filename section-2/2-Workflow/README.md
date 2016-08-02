@@ -57,9 +57,9 @@ Please follow these steps when you are facing a problem.
 
 When you are asking about an error, always include:
 
-1) The task and the project you are working on.
-2) The command you were running. If it is a failing test, then the test code.
-3) The exact output causing the headache.
+1. The task and the project you are working on.
+1. The command you were running. If it is a failing test, then the test code.
+1. The exact output causing the headache.
 
 This saves time for everyone.
 
