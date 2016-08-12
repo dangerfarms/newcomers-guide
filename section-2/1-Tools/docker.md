@@ -36,6 +36,13 @@ If this happens, first use the diagnosis tool provided to check for issues. If h
 4. Run `rm -rf ~/Library/Containers/com.docker.*` to remove the data folder
 5. Install as per the Docker for Mac guide.
 
+**no/intermittent internet connection within containers**
+If within side any container you are unable to run package installs, curl, pip or any other tool for downloading binaries/libraries, you may need to update your DNS settings.
+
+1. Open `Network` via Spotlight or other means
+2. Select your wifi connection and choose Advanced > DNS
+3. Remove any entries you may have and replace with 8.8.8.8 and 8.8.4.4 (Google's DNS servers)
+4. If these are already the only 2 DNS servers, cry for a short while then ask for help!
 
 
 ##Practice
