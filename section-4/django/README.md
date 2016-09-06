@@ -85,6 +85,48 @@ You can revert a migration by running `./manage.py migrate` with a specific paca
 
 Then you can switch back to another branch safely.
 
+#### A tale about why you should never remove migrations
+Schema migrations are database management system (DBMS, such as e.g. PostgreSQL, MySQL, sqlite, etc) independent code snippets, that describe change to the database schema.
+
+When a schema migration gets applied, it is essentially translated to some flavour of SQL (we usually use PostgreSQL), or other database language.
+
+Lets say you start with an easy migration:  
+0001:  
+`CREATE TABLE something COLUMNS name VARCHAR(20);`  
+
+(Note that this is not real sql, but enough to get my point accross.)
+
+Then someone adds a field and the following migration is created:  
+0002:  
+`ALTER TABLE something ADD COLUMN age INTEGER;`  
+
+Then someone modifies that field:  
+0003:  
+`ALTER TABLE something ALTER COLUMN RENAME age TO old_age;` 
+
+Now imagine our production server with all our very important data about Somethings is at a stage where it applied 0001 and 0002 but not 0003.
+
+Django saves this information (the fact that something 0001 and something 0002 both been applied) in another database table. That is where the info comes from when you run `./manage.py showmigrations`
+
+Now someone comes along and removes all migrations, and recreates a new one:  
+0001:  
+`CREATE TABLE something COLUMNS name VARCHAR(20), old_age INTEGER;`  
+
+The production server actually has table `something` with columns `name` and `old_age`
+
+And it "knows" it had already applied `something 0001`, so will not apply it (even if it would, it would break, as the table already exists...).
+
+Now it tries to run some code, like retrieving a `Something`, and this sql command is created by django from the model code, which is correct:
+
+`SELECT name, old_age FROM something WHERE id=1;`
+
+However now the database complains, because `table 'something' has no column 'old_age'`.
+
+And now you have a nice 500 error and nothing works any more.
+
+Don't remove or edit existing migrations.
+
+The end. 
 
 ### Setting defaults when adding new fields
 If adding a new field to a model (or changing an existing field) that has no default value and isn't nullable, the `makemigrations` management command will prompt you to either change the model definition and add `default=<value>` or provide a default value for the migration. It might also be tempting to add `null=True` to the model field definition.
