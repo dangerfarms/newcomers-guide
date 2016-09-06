@@ -85,7 +85,7 @@ You can revert a migration by running `./manage.py migrate` with a specific paca
 
 Then you can switch back to another branch safely.
 
-#### A tale about why you should never remove migrations
+#### A tale about why you should never remove or edit migrations
 Schema migrations are database management system (DBMS, such as e.g. PostgreSQL, MySQL, sqlite, etc) independent code snippets, that describe change to the database schema.
 
 When a schema migration gets applied, it is essentially translated to some flavour of SQL (we usually use PostgreSQL), or other database language.
