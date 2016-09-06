@@ -33,7 +33,7 @@ Here is the detailed workflow:
 1. Refactor your code, commit, and push.
 1. Merge the development branch into your branch: `git pull origin development`
 1. Repeat steps 4-6 until your task is done.
-1. Create a new Pull Request on your branch.
+1. Create a new Pull Request on your branch. In the description include `connected to <issue-number>` so that it will appear in a concise way on waffle.
 1. Move your ticket to 'For testing' on waffle'.
 1. Let a gluer know your task is ready for reviewing.
 1. A gluer will review your task, and move it back to 'In progress' if further work is needed.
